@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgTwitterIcon(props: React.SVGProps<SVGSVGElement>) {
+function SvgTwitterIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
     return (
         <svg
             aria-hidden="true"
