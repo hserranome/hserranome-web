@@ -12,7 +12,7 @@ const Home: React.FC = () => {
                 <title>Hendy Serrano - Digital creator</title>
                 <meta
                     name="description"
-                    content="🚀 Creating digital products from zero. 📣 I post about all the process posted publicly. 🧠 Sharing resources, tools, and reflexions that I find around."
+                    content="🚀 Creating digital products from zero. 📣 I post about the entire creation process. 🧠 Sharing resources, tools, and useful reflexions."
                 />
                 <meta
                     name="keywords"
@@ -47,10 +47,9 @@ const Hero: React.FC = () => {
                         <p className="text-base text-gray-700 md:text-lg">
                             <b>🚀 Creating digital products from zero.</b>
                             <br />
-                            📣 I post about all the process posted publicly.
+                            📣 I post about the entire creation process.
                             <br />
-                            🧠 Sharing resources, tools, and reflexions that I
-                            find around.
+                            🧠 Sharing resources, tools, and useful reflexions.
                         </p>
                     </div>
                     <hr className="mb-6 border-gray-300" />
