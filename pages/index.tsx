@@ -164,11 +164,11 @@ const Projects = () => {
             <div className="flex flex-col justify-between w-screen	">
                 <BlogYearSeparator text="Current projects" />
                 <ProjectItem
-                    title="trabajosremotos.es - Tablón de teletrabajos 100% español."
+                    title="trabajosremotos.es - Remote jobs board 100% in spanish."
                     link="https://trabajosremotos.es"
                 />
                 <ProjectItem
-                    title="notionmango.com - Plantillas de Notion y artículos de productividad."
+                    title="notionmango.com - Notion templates and productivity templates in spanish."
                     link="https://notionmango.com"
                 />
             </div>
