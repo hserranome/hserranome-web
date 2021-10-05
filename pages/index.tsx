@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import { Container } from "@components";
 import SvgTwitterIcon from "@components/icons/TwitterIcon";
@@ -36,40 +37,43 @@ export default Home;
 
 const Hero: React.FC = () => {
     return (
-        <div className="px-4 pt-24 pb-14 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-24 ">
-            <div className="flex flex-col justify-between lg:flex-row w-full">
-                <div className="mb-12 lg:max-w-lg lg:pr-5 lg:mb-0">
-                    <div className="max-w-xl mb-6">
-                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                            ¡Hello! I'm Hendy Serrano 👋
-                            <br />
-                        </h2>
-                        <p className="text-base text-gray-700 md:text-lg">
-                            <b>🚀 Creating digital products from zero.</b>
-                            <br />
-                            📣 I post about the entire creation process.
-                            <br />
-                            🧠 Sharing resources, tools, and useful reflexions.
-                        </p>
-                    </div>
-                    <hr className="mb-6 border-gray-300" />
-                    <div className="flex flex-row">
-                        <a
-                            href="https://twitter.com/hserranome"
-                            className="mr-6 flex items-center"
-                        >
-                            <SvgTwitterIcon color="#1DA1F2" />
-                            <p className="ml-2">hserranome</p>
-                        </a>
-                        <a
-                            href="mailto:hello@hserrano.me"
-                            className="mr-6 flex items-center"
-                        >
-                            <SvgEmailIcon fill="#EA4335" />
-                            <p className="ml-1">hello@hserrano.me</p>
-                        </a>
-                    </div>
-                </div>
+        <div className="mx-auto px-4 pt-24 lg:pt-24 pb-8 max-w-screen-sm w-full">
+            <div className="mb-6">
+                <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                    ¡Hello! I'm Hendy Serrano 👋
+                    <br />
+                </h2>
+                <p className="text-base text-gray-700 md:text-lg">
+                    <b>🚀 Creating digital products from zero.</b>
+                    <br />
+                    📣 I post about the entire creation process.
+                    <br />
+                    🧠 Sharing resources, tools, and thoughts I find along the
+                    way.
+                </p>
+            </div>
+            <hr className="mb-6 border-gray-300" />
+            <div className="flex flex-row">
+                <a
+                    href="https://twitter.com/hserranome"
+                    className="mr-6 flex items-center"
+                >
+                    <SvgTwitterIcon color="#1DA1F2" />
+                    <p className="ml-2">hserranome</p>
+                </a>
+                <a
+                    href="mailto:hello@hserrano.me"
+                    className="mr-6 flex items-center"
+                >
+                    <SvgEmailIcon fill="#EA4335" />
+                    <p className="ml-1">hello@hserrano.me</p>
+                </a>
+                <Link href="/newsletter">
+                    <a className="mr-6 flex items-center">
+                        <span>📬</span>{" "}
+                        <p className="ml-1">Weekly Newsletter</p>
+                    </a>
+                </Link>
             </div>
         </div>
     );
@@ -150,16 +154,9 @@ const BlogYearSeparator = ({ text }: { text: string }) => {
     );
 };
 
-{
-    /* <div className="px-4 pt-24 pb-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-24 lg:pb-20">
-<div className="flex flex-col justify-between lg:flex-row w-full">
-	<div className="mb-12 lg:max-w-lg lg:pr-5 lg:mb-0">
-		<div className="max-w-xl mb-6"> */
-}
-
 const Projects = () => {
     return (
-        <div className="px-4 pb-20 mx-auto max-w-xl	 md:px-24 lg:px-8 lg:pb-20">
+        <div className="mx-auto px-4 pb-14 max-w-screen-sm w-full">
             <div className="flex flex-col justify-between w-screen	">
                 <BlogYearSeparator text="Current projects" />
                 <ProjectItem

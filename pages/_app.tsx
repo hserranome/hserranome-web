@@ -29,16 +29,14 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
                         sizes="16x16"
                         href="/favicon-16x16.png"
                     />
-                    <Head>
-                        {process.env.NODE_ENV == "production" ? (
-                            <script
-                                async
-                                defer
-                                data-website-id="168b16e3-449f-437a-abc8-d9eceff85565"
-                                src="https://analytics.mango.moe/umami.js"
-                            ></script>
-                        ) : null}
-                    </Head>
+                    {process.env.NODE_ENV == "production" ? (
+                        <script
+                            async
+                            defer
+                            data-website-id="168b16e3-449f-437a-abc8-d9eceff85565"
+                            src="https://analytics.mango.moe/umami.js"
+                        ></script>
+                    ) : null}
                 </Head>
                 <Component {...pageProps} />
             </Hydrate>
