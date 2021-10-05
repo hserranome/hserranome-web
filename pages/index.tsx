@@ -9,14 +9,14 @@ const Home: React.FC = () => {
     return (
         <Container>
             <Head>
-                <title>Hendy Serrano - Creador digital</title>
+                <title>Hendy Serrano - Digital creator</title>
                 <meta
                     name="description"
-                    content="Creo productos digitales desde cero. Todo el proceso en publico, en mi blog y redes sociales. Comparto recursos, y pensamientos interesantes que voy encontrando por la web. Empredimiento."
+                    content="🚀 Creating digital products from zero. 📣 I post about all the process posted publicly. 🧠 Sharing resources, tools, and reflexions that I find around."
                 />
                 <meta
                     name="keywords"
-                    content="digital, product management, emprendimiento, entrepeneurship, programacion, marketing, startup, apps, desarrollo, development"
+                    content="digital, product management, entrepeneurship, programming, marketing, startup, apps, development"
                 />
                 <meta name="author" content="Hendy Serrano" />
                 <meta
@@ -41,16 +41,16 @@ const Hero: React.FC = () => {
                 <div className="mb-12 lg:max-w-lg lg:pr-5 lg:mb-0">
                     <div className="max-w-xl mb-6">
                         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                            ¡Hola! Soy Hendy Serrano 👋
+                            ¡Hello! I'm Hendy Serrano 👋
                             <br />
                         </h2>
                         <p className="text-base text-gray-700 md:text-lg">
-                            <b>🚀 Creando productos digitales desde cero.</b>
+                            <b>🚀 Creating digital products from zero.</b>
                             <br />
-                            📣 Publico sobre todo el proceso en mi blog y redes
-                            sociales. <br />
-                            🧠 Comparto recursos, herramientas y reflexiones
-                            interesantes que voy encontrando por la web.
+                            📣 I post about all the process posted publicly.
+                            <br />
+                            🧠 Sharing resources, tools, and reflexions that I
+                            find around.
                         </p>
                     </div>
                     <hr className="mb-6 border-gray-300" />
@@ -162,7 +162,7 @@ const Projects = () => {
     return (
         <div className="px-4 pb-20 mx-auto max-w-xl	 md:px-24 lg:px-8 lg:pb-20">
             <div className="flex flex-col justify-between w-screen	">
-                <BlogYearSeparator text="Mis proyectos" />
+                <BlogYearSeparator text="Current projects" />
                 <ProjectItem
                     title="trabajosremotos.es - Tablón de teletrabajos 100% español."
                     link="https://trabajosremotos.es"
