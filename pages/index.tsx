@@ -68,12 +68,10 @@ const Hero: React.FC = () => {
                     <SvgEmailIcon fill="#EA4335" />
                     <p className="ml-1">hello@hserrano.me</p>
                 </a>
-                <Link href="/newsletter">
-                    <a className="mr-6 flex items-center">
-                        <span>📬</span>{" "}
-                        <p className="ml-1">Weekly Newsletter</p>
-                    </a>
-                </Link>
+
+                <a className="mr-6 flex items-center" href="/newsletter">
+                    <span>📬</span> <p className="ml-1">Weekly Newsletter</p>
+                </a>
             </div>
         </div>
     );
