@@ -62,11 +62,11 @@ const Hero: React.FC = () => {
                     <p className="ml-2">hserranome</p>
                 </a>
                 <a
-                    href="mailto:hello@hserrano.me"
+                    href="mailto:hendy@hserrano.me"
                     className="mr-6 flex items-center"
                 >
                     <SvgEmailIcon fill="#EA4335" />
-                    <p className="ml-1">hello@hserrano.me</p>
+                    <p className="ml-1">hendy@hserrano.me</p>
                 </a>
 
                 <a className="mr-6 flex items-center" href="/newsletter">
