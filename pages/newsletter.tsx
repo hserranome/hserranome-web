@@ -42,8 +42,9 @@ const Home: React.FC = () => {
                     Weekly newsletter 📬
                 </h1>
                 <p className="mb-3">
-                    Every Tuesday, I send out an email with that week&#39;s blog
-                    with:
+                    Every Tuesday, I send out my newsletter in which you get a
+                    quick summary of what I found or did over the week.
+                    Including:
                 </p>
                 <ul className="list-disc list-inside mb-3 pl-6">
                     <li className="mb-1">
@@ -58,9 +59,8 @@ const Home: React.FC = () => {
                     </li>
                 </ul>
                 <p className="mb-2">
-                    This way, I can reach people even if I get lost into their
-                    feeds. If you want to get it, subscribe to my weekly
-                    newsletter!
+                    I try to add as much value as I can cram into a short 2
+                    minutes email 😊
                 </p>
                 <p className="text-gray-400 mb-6">
                     You can cancel anytime, and I won't sell your mail to any
