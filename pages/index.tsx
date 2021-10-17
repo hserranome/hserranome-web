@@ -170,11 +170,11 @@ const Projects = () => {
             <div className="flex flex-col justify-between w-screen	">
                 <BlogYearSeparator text="Current projects" />
                 <ProjectItem
-                    title="trabajosremotos.es - Remote jobs board 100% in spanish."
+                    title="Remote jobs board 100% in spanish — trabajosremotos.es"
                     link="https://trabajosremotos.es"
                 />
                 <ProjectItem
-                    title="notionmango.com - Notion templates and productivity templates in spanish."
+                    title="Notion templates and productivity tips in spanish — notionmango.com"
                     link="https://notionmango.com"
                 />
             </div>
@@ -185,11 +185,7 @@ const Projects = () => {
 const ProjectItem = ({ title, link }: { title?: string; link?: string }) => {
     return (
         <div className="mb-4 flex items-start">
-            <a
-                href={link ?? ""}
-                className="font-medium text-indigo-700	"
-                target="_blank"
-            >
+            <a href={link ?? ""} className=" text-indigo-600" target="_blank">
                 {title ?? ""}
             </a>
         </div>
