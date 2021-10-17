@@ -66,11 +66,53 @@ const Home: React.FC = () => {
                     You can cancel anytime, and I won't sell your mail to any
                     marketing coyote.
                 </p>
-                <script
-                    async
-                    src="https://eomail6.com/form/604d2fee-25de-11ec-96e5-06b4694bee2a.js"
-                    data-form="604d2fee-25de-11ec-96e5-06b4694bee2a"
-                ></script>
+                <div id="revue-embed">
+                    <form
+                        action="https://www.getrevue.co/profile/hserranome/add_subscriber"
+                        method="post"
+                        id="revue-form"
+                        name="revue-form"
+                        target="_blank"
+                    >
+                        <div className="flex">
+                            <div className="revue-form-group w-full mr-2 flex">
+                                <input
+                                    className="revue-form-field w-full appearance-none border rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Your email address..."
+                                    type="email"
+                                    name="member[email]"
+                                    id="member_email"
+                                />
+                            </div>
+                            <div className="revue-form-actions flex-shrink-0 ">
+                                <input
+                                    className="bg-indigo-500 hover:bg-indigo-700 text-white font-medium py-2 px-10 rounded focus:outline-none focus:shadow-outline"
+                                    type="submit"
+                                    value="Subscribe"
+                                    name="member[subscribe]"
+                                    id="member_submit"
+                                />
+                            </div>
+                        </div>
+                        <div className="revue-form-footer text-gray-400 text-sm pt-2">
+                            By subscribing, you agree with Revue’s{" "}
+                            <a
+                                target="_blank"
+                                href="https://www.getrevue.co/terms"
+                            >
+                                Terms of Service
+                            </a>{" "}
+                            and{" "}
+                            <a
+                                target="_blank"
+                                href="https://www.getrevue.co/privacy"
+                            >
+                                Privacy Policy
+                            </a>
+                            .
+                        </div>
+                    </form>
+                </div>
             </div>
         </Container>
     );
