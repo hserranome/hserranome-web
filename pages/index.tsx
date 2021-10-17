@@ -1,10 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 
 import { Container } from "@components";
-import SvgTwitterIcon from "@components/icons/TwitterIcon";
-import SvgEmailIcon from "@components/icons/EmailIcon";
 
 const Home: React.FC = () => {
     return (
