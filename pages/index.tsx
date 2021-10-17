@@ -37,17 +37,19 @@ export default Home;
 
 const Hero: React.FC = () => {
     return (
-        <div className="mx-auto px-4 pt-24 lg:pt-24 pb-14 max-w-screen-sm w-full">
+        <div className="mx-auto max-w-screen-sm w-full px-4 pt-24 lg:pt-24 pb-14 font-sans ">
             <div className="mb-6">
-                <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                    ¡Hello! I'm Hendy Serrano 👋
+                <h2 className="mb-6 text-3xl tracking-tight text-gray-800 sm:text-4xl sm:leading-none">
+                    <span>¡Hello! I'm </span>
+                    <br className="sm:hidden" />
+                    <span className="font-bold">Hendy Serrano 👋</span>
                     <br />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                     <span>🚀 </span>
-                    <b className="ml-1">
+                    <span className="ml-1 font-bold">
                         Creating digital products from scratch.
-                    </b>
+                    </span>
                     <br />
                     <span>📣 </span>
                     <span className="ml-1">
@@ -61,28 +63,27 @@ const Hero: React.FC = () => {
                 </p>
             </div>
             <hr className="mb-6 border-gray-300" />
-            <div className="flex flex-row text-indigo-500">
+            <div className="flex flex-col sm:flex-row text-indigo-500 font-medium">
                 <a
+                    className="mr-8 flex items-center"
                     href="https://twitter.com/hserranome"
-                    className="mr-8 flex items-center"
                 >
-                    <SvgTwitterIcon color="#1DA1F2" />
-                    <p className="ml-1 underline">hserranome</p>
+                    <span>🐤</span>
+                    <p className="ml-3 underline">Twitter</p>
                 </a>
                 <a
+                    className="mr-8 flex items-center mt-2 sm:mt-0"
                     href="mailto:hendy@hserrano.me"
-                    className="mr-8 flex items-center"
                 >
-                    <span>💌</span>
-                    <p className="ml-2 underline">hendy@hserrano.me</p>
+                    <span>📬</span>
+                    <p className="ml-3 underline">Email</p>
                 </a>
-
                 <a
-                    className="mr-8 flex items-center"
+                    className="mr-8 flex items-center mt-2 sm:mt-0"
                     href="https://weekly.hserrano.me/"
                 >
-                    <span>🗞</span>
-                    <p className="ml-2 underline">Weekly Newsletter</p>
+                    <span>🍩</span>
+                    <p className="ml-3 underline">Newsletter</p>
                 </a>
             </div>
         </div>
@@ -158,7 +159,7 @@ const BlogItem = ({
 
 const BlogYearSeparator = ({ text }: { text: string }) => {
     return (
-        <div className="font-bold text-lg mt-8 mb-4">
+        <div className="font-bold text-lg mt-8 mb-4 text-gray-700">
             <p>{text ?? ""}</p>
         </div>
     );
@@ -166,15 +167,35 @@ const BlogYearSeparator = ({ text }: { text: string }) => {
 
 const Projects = () => {
     return (
-        <div className="mx-auto px-4 pb-14 max-w-screen-sm w-full">
-            <div className="flex flex-col justify-between w-screen	">
+        <div className="mx-auto max-w-screen-sm w-full px-4 pb-14 font-sans ">
+            <div className="flex flex-col justify-between">
                 <BlogYearSeparator text="Current projects" />
                 <ProjectItem
-                    title="Remote jobs board 100% in spanish — trabajosremotos.es"
+                    title={
+                        <span>
+                            Remote jobs board 100% in spanish
+                            <span className="text-indigo-500">
+                                <br className="sm:hidden" /> —{" "}
+                                <span className="underline">
+                                    trabajosremotos.es
+                                </span>
+                            </span>
+                        </span>
+                    }
                     link="https://trabajosremotos.es"
                 />
                 <ProjectItem
-                    title="Notion templates and productivity tips in spanish — notionmango.com"
+                    title={
+                        <span>
+                            Notion templates and productivity tips in spanish
+                            <span className="text-indigo-500">
+                                <br className="sm:hidden" /> —{" "}
+                                <span className="underline">
+                                    notionmango.com
+                                </span>
+                            </span>
+                        </span>
+                    }
                     link="https://notionmango.com"
                 />
             </div>
@@ -182,10 +203,10 @@ const Projects = () => {
     );
 };
 
-const ProjectItem = ({ title, link }: { title?: string; link?: string }) => {
+const ProjectItem = ({ title, link }: { title?; link?: string }) => {
     return (
-        <div className="mb-4 flex items-start">
-            <a href={link ?? ""} className=" text-indigo-600" target="_blank">
+        <div className="mb-4 flex items-start text-gray-700">
+            <a href={link ?? ""} className="" target="_blank">
                 {title ?? ""}
             </a>
         </div>
