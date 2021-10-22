@@ -37,7 +37,7 @@ const PROJECTS_DATA = [
         img: "/static/images/seetyz.png",
         description: "Biarritz lifestyle guide for reservations and pick up",
         technologies: "React Native, React, Node.js, PostgreSQL",
-        link: "https://www.hobeen.com",
+        link: "https://seetyz.com",
     },
 ];
 
