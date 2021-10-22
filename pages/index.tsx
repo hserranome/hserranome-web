@@ -36,12 +36,12 @@ const Hero: React.FC = () => {
     return (
         <div className="mx-auto max-w-screen-sm w-full px-4 pt-24 lg:pt-24 pb-14 font-sans ">
             <div className="mb-6">
-                <h2 className="mb-6 text-3xl tracking-tight text-gray-800 sm:text-4xl sm:leading-none">
+                <h1 className="mb-6 text-3xl tracking-tight text-gray-800 sm:text-4xl sm:leading-none">
                     <span>¡Hello! I'm </span>
                     <br className="sm:hidden" />
                     <span className="font-bold">Hendy Serrano 👋</span>
                     <br />
-                </h2>
+                </h1>
                 <p className="text-base text-gray-700 md:text-lg">
                     <span>🚀 </span>
                     <span className="ml-1 font-bold">
@@ -202,10 +202,10 @@ const Projects = () => {
 
 const ProjectItem = ({ title, link }: { title?; link?: string }) => {
     return (
-        <div className="mb-4 flex items-start text-gray-700">
+        <h3 className="mb-4 flex items-start text-gray-700">
             <a href={link ?? ""} className="" target="_blank">
                 {title ?? ""}
             </a>
-        </div>
+        </h3>
     );
 };
