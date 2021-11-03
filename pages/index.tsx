@@ -58,27 +58,20 @@ const Hero: React.FC = () => {
                 </p>
             </div>
             <hr className="mb-6 border-gray-300" />
-            <div className="flex flex-col sm:flex-row text-indigo-500 font-medium">
+            <div className="flex flex-col text-indigo-500 font-medium">
+                <a
+                    className="mr-8 flex items-center mt-2 sm:mt-0"
+                    href="mailto:hendy@hserrano.me"
+                >
+                    <span>📬</span>
+                    <p className="ml-3 underline">hendy@hserrano.me</p>
+                </a>
                 <a
                     className="mr-8 flex items-center"
                     href="https://twitter.com/hserranome"
                 >
                     <span>🐤</span>
                     <p className="ml-3 underline">Twitter</p>
-                </a>
-                <a
-                    className="mr-8 flex items-center mt-2 sm:mt-0"
-                    href="mailto:hendy@hserrano.me"
-                >
-                    <span>📬</span>
-                    <p className="ml-3 underline">Email</p>
-                </a>
-                <a
-                    className="mr-8 flex items-center mt-2 sm:mt-0"
-                    href="https://weekly.hserrano.me/"
-                >
-                    <span>🍩</span>
-                    <p className="ml-3 underline">Newsletter</p>
                 </a>
             </div>
         </div>

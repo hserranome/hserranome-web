@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
             </h1>
             <p className="text-2xl max-w-3xl font-medium leading-snug">
                 I'm <span className="text-indigo-500">Hendy Serrano</span>, a
-                designer and developer from Madrid 🌃 who has been developing
+                designer and developer from Madrid 🌃 who has been creating
                 products for over four years.
             </p>
         </div>
