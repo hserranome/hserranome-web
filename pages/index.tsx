@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
         <div className="mx-auto max-w-screen-sm w-full px-4 pt-24 lg:pt-24 pb-14 font-sans ">
             <div className="mb-6">
                 <h1 className="mb-6 text-3xl tracking-tight text-gray-800 sm:text-4xl sm:leading-none">
-                    <span>¡Hello! I'm </span>
+                    <span>Hello! I'm </span>
                     <br className="sm:hidden" />
                     <span className="font-bold">Hendy Serrano 👋</span>
                     <br />
