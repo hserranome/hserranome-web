@@ -7,11 +7,8 @@ const Home: React.FC = () => {
     return (
         <Container>
             <Head>
-                <title>Hendy Serrano - Digital creator</title>
-                <meta
-                    name="description"
-                    content="🚀  Creating digital products from scratch. 📣  I write about the entire creation process. 🧠  Sharing resources, tools, and thoughts."
-                />
+                <title>Hendy Serrano 🚀 </title>
+                <meta name="description" content="🚀 " />
                 <meta
                     name="keywords"
                     content="digital, product management, entrepeneurship, programming, marketing, startup, apps, development"
@@ -48,14 +45,21 @@ const Hero: React.FC = () => {
                     href="mailto:hendy@hserrano.me"
                 >
                     <span>📬</span>
-                    <p className="ml-3 underline">hendy@hserrano.me</p>
+                    <p className="ml-3 underline">Email</p>
                 </a>
                 <a
-                    className="mr-8 flex items-center"
+                    className="mr-8 mb-1 flex items-center"
                     href="https://twitter.com/hserranome"
                 >
                     <span>🐤</span>
-                    <p className="ml-3 underline">@hserranome</p>
+                    <p className="ml-3 underline">Twitter</p>
+                </a>
+                <a
+                    className="mr-8 mb-1 flex items-center"
+                    href="https://hserrano.me/freelance"
+                >
+                    <span>💼</span>
+                    <p className="ml-3 underline">Freelance</p>
                 </a>
             </div>
         </div>
