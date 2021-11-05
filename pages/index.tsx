@@ -40,27 +40,11 @@ const Hero: React.FC = () => {
                     <span className="font-bold">Hendy Serrano 👋</span>
                     <br />
                 </h1>
-                <p className="text-base text-gray-700 md:text-lg">
-                    <span>🚀 </span>
-                    <span className="ml-1 font-bold">
-                        Creating digital products from scratch.
-                    </span>
-                    <br />
-                    <span>📣 </span>
-                    <span className="ml-1">
-                        I write about the entire creation process.
-                    </span>
-                    <br />
-                    <span>🧠 </span>
-                    <span className="ml-1">
-                        Sharing resources, tools, and thoughts.
-                    </span>
-                </p>
             </div>
             <hr className="mb-6 border-gray-300" />
             <div className="flex flex-col text-indigo-500 font-medium">
                 <a
-                    className="mr-8 flex items-center mt-2 sm:mt-0"
+                    className="mr-8 flex items-center mt-2 sm:mt-0 mb-1"
                     href="mailto:hendy@hserrano.me"
                 >
                     <span>📬</span>
@@ -71,7 +55,7 @@ const Hero: React.FC = () => {
                     href="https://twitter.com/hserranome"
                 >
                     <span>🐤</span>
-                    <p className="ml-3 underline">Twitter</p>
+                    <p className="ml-3 underline">@hserranome</p>
                 </a>
             </div>
         </div>
