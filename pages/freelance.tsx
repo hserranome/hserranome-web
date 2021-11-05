@@ -2,8 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 import { Container } from "@components";
-// TODO #Freelance responsive, image optimizations, and robots check.
-//  Check descriptions. Add some colors to texts. Title.
 
 const PROJECTS_DATA = [
     {
