@@ -76,6 +76,7 @@ const Home: React.FC = () => {
             </Head>
             <div className="mx-auto max-w-screen-lg w-full px-8 pb-20 font-freelance text-gray-700">
                 <Hero />
+                <About />
                 <Work />
                 <p className="font-medium text-lg text-indigo-500 text-center mt-8">
                     <Link href="/">
@@ -125,6 +126,35 @@ const Hero: React.FC = () => {
     );
 };
 
+export const About = () => {
+    return (
+        <div className="pb-24">
+            <h2 className="text-3xl font-bold mb-10 lg:text-center">About</h2>
+            <div className="text-base md:text-lg max-w-2xl text-justify lg:mx-auto">
+                <p>
+                    At the age of ten, I set up my own Minecraft server and
+                    posted it on a forum so that other people could play with
+                    me. I've been tinkering with technology ever since. I became
+                    more and more interested in development, and I started
+                    working as a web developer at 18.
+                </p>
+                <br />
+                <p>
+                    I started out as a freelancer and then worked for companies
+                    as a developer, lead developer, scrum master, and had a try
+                    at being CTO.
+                </p>
+                <br />
+                <p>
+                    I've always enjoyed UI design and I'm always trying to
+                    improve the user experience on everything I build, even
+                    though my main role is development.
+                </p>
+            </div>
+        </div>
+    );
+};
+
 const Work: React.FC = () => {
     const Image = ({ src }) => (
         <div className="md:w-2/5 mb-6 md:mb-0">
@@ -161,7 +191,9 @@ const Work: React.FC = () => {
     );
     return (
         <div className="pb-6">
-            <h2 className="text-3xl font-bold mb-12 text-center">Work</h2>
+            <h2 className="text-3xl font-bold mb-10 sm:mb-12 lg:text-center">
+                Work
+            </h2>
             {Work_DATA.map((project, i) => (
                 <div
                     className="flex mb-16 justify-between flex-col md:flex-row"
