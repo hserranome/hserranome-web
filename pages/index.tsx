@@ -1,5 +1,6 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import { Container } from "@components";
 
@@ -49,9 +50,11 @@ export const Content: React.FC = () => {
                     <p className="text-xl text-gray-800 md:text-xl">
                         Currently looking for freelance projects 🔍
                         <br />
-                        <a href="/portolio" className="text-indigo-600">
-                            Check out my work in my portfolio
-                        </a>
+                        <Link href="/portfolio">
+                            <a className="text-indigo-600">
+                                Check out my work in my portfolio
+                            </a>
+                        </Link>
                         ✨
                     </p>
                 </div>
