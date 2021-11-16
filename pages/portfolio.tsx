@@ -168,7 +168,9 @@ const Skills: React.FC = () => {
                     <p>
                         JavaScript <Sep /> Single-page Applications (SPA){" "}
                         <Sep /> ES6, TypeScript <Sep /> React <Sep /> Redux{" "}
-                        <Sep /> Next.js <Sep /> Gatsby <Sep /> TypeScript
+                        <Sep /> Next.js <Sep /> Gatsby <Sep /> TypeScript{" "}
+                        <Sep /> CSS/SCSS <Sep /> Material UI <Sep /> Tailwind
+                        CSS
                     </p>
                 </div>
                 <div className="mb-6">
