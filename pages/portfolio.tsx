@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import { Container } from "@components";
 
-const PROJECTS_DATA = [
+const Work_DATA = [
     {
         title: "Comunidad Penta",
         img: "/static/images/penta.png",
@@ -73,10 +74,14 @@ const Home: React.FC = () => {
                     rel="stylesheet"
                 />
             </Head>
-            <div className="mx-auto max-w-screen-lg w-full px-4 font-freelance text-gray-700">
+            <div className="mx-auto max-w-screen-lg w-full px-8 pb-20 font-freelance text-gray-700">
                 <Hero />
-                <Projects />
-                <Contact />
+                <Work />
+                <p className="font-medium text-lg text-indigo-500 text-center mt-8">
+                    <Link href="/">
+                        <a>Go to homepage</a>
+                    </Link>
+                </p>
             </div>
         </Container>
     );
@@ -84,27 +89,45 @@ const Home: React.FC = () => {
 
 export default Home;
 
+// - Hi
+// - What I am
+// - Pic of my face
+// - About
+// - Mail
+// - Skills
+// - Experience
+// - Work
+// - Contact
+
 const Hero: React.FC = () => {
     return (
-        <div className="pt-36 md:pt-52 pb-8 md:pb-14 mb-20">
-            <h1 className="mb-6 text-6xl font-extrabold leading-tight">
-                Building great products
-                <br /> with ReactJS.
-            </h1>
-            <p className="text-2xl max-w-3xl font-medium leading-snug">
-                I'm <span className="text-indigo-500">Hendy Serrano</span>, a
-                designer and developer from Madrid 🌃 who has been creating
-                products for over four years.
-            </p>
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-12 lg:pt-36 pb-28">
+            <div>
+                <h1 className="text-lg lg:text-xl leading-tight mb-3">
+                    Hello, my name is Hendy Serrano and I am a{" "}
+                </h1>
+                <p className="text-2xl lg:text-2xl max-w-xl font-medium mb-3 leading-normal">
+                    Freelance developer with a knack for design. Specialized in
+                    React, Next.js, Node.js, and more. <br /> Based in Madrid 🌃
+                </p>
+                <p className="font-medium text-lg text-indigo-500">
+                    <a href="mailto:hendy@hserrano.me">hendy@hserrano.me</a>
+                </p>
+            </div>
+            <div className="">
+                <img
+                    alt="Avatar of a cute cat with a cartoon crown"
+                    src="/static/images/avatar.png"
+                    className="object-cover rounded-full h-32 w-32 lg:h-64 lg:w-64 mb-7"
+                />
+            </div>
         </div>
     );
 };
 
-const isEven = (num) => num % 2 === 0;
-
-const Projects: React.FC = () => {
+const Work: React.FC = () => {
     const Image = ({ src }) => (
-        <div className="md:w-2/5 mb-8 md:mb-0">
+        <div className="md:w-2/5 mb-6 md:mb-0">
             <img
                 src={src}
                 alt=""
@@ -113,15 +136,13 @@ const Projects: React.FC = () => {
         </div>
     );
     const Text = ({ data }) => (
-        <div className="pt-3 md:w-1/2">
-            <h2 className="text-5xl font-bold mb-4">{data.title}</h2>
-            <p className="text-lg mb-4 text-gray-500">
-                {data.areas} <br /> {data.technologies}
-            </p>
-            <p className="text-lg mb-6">{data.description} </p>
+        <div className="pt-0 lg:pt-3 md:w-1/2">
+            <h2 className="text-2xl font-medium mb-4">{data.title}</h2>
+            <p className="mb-3">{data.description}</p>
+            <p className="mb-4 text-gray-500">{data.technologies}</p>
             <a
                 href={data.link}
-                className="underline font-medium text-indigo-800 text-opacity-90"
+                className="font-medium text-indigo-800 text-opacity-90"
                 target="_blank"
                 referrerPolicy="no-referrer"
             >
@@ -129,7 +150,6 @@ const Projects: React.FC = () => {
                 <i
                     style={{
                         display: "inline-block",
-                        textDecoration: "underline",
                         position: "relative",
                         transform: "rotateY(180deg)",
                     }}
@@ -141,33 +161,16 @@ const Projects: React.FC = () => {
     );
     return (
         <div className="pb-6">
-            {PROJECTS_DATA.map((project, i) => {
-                const even = isEven(i);
-                return (
-                    <div
-                        className={`flex mb-24 md:mb-32 justify-between flex-col ${
-                            even ? "md:flex-row-reverse" : "md:flex-row"
-                        }`}
-                        key={`project-${i}`}
-                    >
-                        <Image src={project.img} />
-                        <Text data={project} />
-                    </div>
-                );
-            })}
-        </div>
-    );
-};
-
-const Contact: React.FC = () => {
-    return (
-        <div className="text-center	text-2xl font-medium pb-32">
-            <p>
-                I'm available for freelance projects at{" "}
-                <b className="underline text-indigo-500 hover:text-opacity-80 transition-colors duration-200">
-                    <a href="mailto:hendy@hserrano.me">hendy@hserrano.me</a>
-                </b>
-            </p>
+            <h2 className="text-3xl font-bold mb-12 text-center">Work</h2>
+            {Work_DATA.map((project, i) => (
+                <div
+                    className="flex mb-16 justify-between flex-col md:flex-row"
+                    key={`project-${i}`}
+                >
+                    <Image src={project.img} />
+                    <Text data={project} />
+                </div>
+            ))}
         </div>
     );
 };
