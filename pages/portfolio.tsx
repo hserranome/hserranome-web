@@ -77,7 +77,10 @@ const Home: React.FC = () => {
             <div className="mx-auto max-w-screen-lg w-full px-8 pb-20 font-freelance text-gray-700">
                 <Hero />
                 <About />
+                <Skills />
+                {/* Experience */}
                 <Work />
+                {/* Contact with email, call scheduling, and rates */}
                 <p className="font-medium text-lg text-indigo-500 text-center mt-8">
                     <Link href="/">
                         <a>Go to homepage</a>
@@ -89,11 +92,6 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-// - Skills
-// - Experience
-// - Work
-// - Contact
 
 const Hero: React.FC = () => {
     return (
@@ -151,6 +149,56 @@ export const About: React.FC = () => {
                     hendy@hserrano.me
                 </a>
             </p>
+        </div>
+    );
+};
+
+export const Sep: React.FC = () => (
+    <span className="text-indigo-500 mx-2">❖</span>
+);
+
+// Outgoing links for each one of the skills
+const Skills: React.FC = () => {
+    return (
+        <div className="pb-24">
+            <h2 className="text-3xl font-bold mb-10 lg:text-center">Skills</h2>
+            <div className="text-base md:text-lg max-w-2xl lg:mx-auto">
+                <div className="mb-6">
+                    <p className="font-semibold text-xl mb-1">Front-end</p>
+                    <p>
+                        JavaScript <Sep /> Single-page Applications (SPA){" "}
+                        <Sep /> ES6, TypeScript <Sep /> React <Sep /> Redux{" "}
+                        <Sep /> Next.js <Sep /> Gatsby <Sep /> TypeScript
+                    </p>
+                </div>
+                <div className="mb-6">
+                    <p className="font-semibold text-xl mb-1">Back-end</p>
+                    <p>
+                        Node.js <Sep /> Express <Sep /> PostgreSQL <Sep />{" "}
+                        MongoDB <Sep /> REST <Sep /> Strapi (Headless CMS){" "}
+                        <Sep /> Firebase <Sep /> Third-party APIs (Google Maps,
+                        Stripe, etc.)
+                    </p>
+                </div>
+
+                <div className="mb-6">
+                    <p className="font-semibold text-xl mb-1">Design</p>
+                    <p>
+                        UI design <Sep /> UX (User Experience) <Sep /> Figma{" "}
+                        <Sep /> Photoshop <Sep /> Illustrator <Sep /> Sketch.
+                    </p>
+                </div>
+
+                <div className="mb-6">
+                    <p className="font-semibold text-xl mb-1">Other</p>
+                    <p>
+                        Search engine optimization (SEO) <Sep /> Heroku <Sep />{" "}
+                        Ubuntu <Sep /> AWS
+                        <Sep /> Netlify <Sep /> Docker <Sep /> Git <Sep />{" "}
+                        GitHub.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
