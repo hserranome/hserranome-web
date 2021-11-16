@@ -49,11 +49,7 @@ export const Content: React.FC = () => {
                     <p className="text-xl text-gray-800 md:text-xl">
                         Currently looking for freelance projects 🔍
                         <br />
-                        <a
-                            target="_blank"
-                            href="/portolio"
-                            className="text-indigo-600"
-                        >
+                        <a href="/portolio" className="text-indigo-600">
                             Check out my work in my portfolio
                         </a>
                         ✨
@@ -93,8 +89,8 @@ export const Content: React.FC = () => {
                     <h6 className="mb-3 font-semibold leading-5 text-2xl">
                         Where to find me
                     </h6>
-                    <div className="leading-loose">
-                        <p className="mb-2">
+                    <div className="leading-loose text-base">
+                        <p className="mb-2 text-base">
                             {" "}
                             <span className="mr-2.5">🐤</span>
                             <a
@@ -103,18 +99,20 @@ export const Content: React.FC = () => {
                             >
                                 Twitter
                             </a>
-                            <p className="text-xs text-gray-500">@hserranome</p>
+                            <p className="text-xs text-gray-500 -mt-0.5">
+                                @hserranome
+                            </p>
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">📫</span>
                             <a target="_blank" href="mailto:hendy@hserrano.me">
                                 Email
                             </a>
-                            <p className="text-xs text-gray-500">
+                            <p className="text-xs text-gray-500 -mt-0.5">
                                 hendy@hserrano.me
                             </p>
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">🎒</span>
                             <a
                                 target="_blank"
@@ -122,9 +120,11 @@ export const Content: React.FC = () => {
                             >
                                 Github
                             </a>
-                            <p className="text-xs text-gray-500">hserrano.me</p>
+                            <p className="text-xs text-gray-500 -mt-0.5">
+                                hserrano.me
+                            </p>
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">💼</span>
                             <a
                                 target="_blank"
@@ -132,7 +132,9 @@ export const Content: React.FC = () => {
                             >
                                 LinkedIn
                             </a>
-                            <p className="text-xs text-gray-500">Rarely used</p>
+                            <p className="text-xs text-gray-500 -mt-0.5">
+                                Rarely used
+                            </p>
                         </p>
                     </div>
                 </div>
@@ -141,30 +143,39 @@ export const Content: React.FC = () => {
                         Things I love
                     </h6>
                     <div className="leading-loose">
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">📚</span>
                             <a target="_blank" href="https://logseq.com/">
                                 Logseq
                             </a>
-                            <p className="text-xs text-gray-500">
+                            <p className="text-xs text-gray-500 -mt-0.5">
                                 Knowledge database
                             </p>
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">🚀</span>
                             <a target="_blank" href="https://strapi.io/">
                                 Strapi
                             </a>
-                            <p className="text-xs text-gray-500">
-                                Make an API fast
+                            <p className="text-xs text-gray-500 -mt-0.5">
+                                API, the fast way
                             </p>
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 text-base">
+                            <span className="mr-2.5">💡</span>
+                            <a target="_blank" href="https://hypothes.is">
+                                Hypothesis
+                            </a>
+                            <p className="text-xs text-gray-500 -mt-0.5">
+                                Annotate directly in the browser
+                            </p>
+                        </p>
+                        <p className="mb-2 text-base">
                             <span className="mr-2.5">🧰</span>
                             <a target="_blank" href="https://www.notion.so/">
                                 Notion
                             </a>
-                            <p className="text-xs text-gray-500">
+                            <p className="text-xs text-gray-500 -mt-0.5">
                                 Organization swiss army knife
                             </p>
                         </p>
