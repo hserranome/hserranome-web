@@ -90,11 +90,6 @@ const Home: React.FC = () => {
 
 export default Home;
 
-// - Hi
-// - What I am
-// - Pic of my face
-// - About
-// - Mail
 // - Skills
 // - Experience
 // - Work
@@ -102,17 +97,17 @@ export default Home;
 
 const Hero: React.FC = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-12 lg:pt-36 pb-28">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-12 lg:pt-36 pb-24">
             <div>
                 <h1 className="text-lg lg:text-xl leading-tight mb-3">
                     Hello, my name is Hendy Serrano and I am a{" "}
                 </h1>
                 <p className="text-2xl lg:text-2xl max-w-xl font-medium mb-3 leading-normal">
                     Freelance developer with a knack for design. Specialized in
-                    React, Next.js, Node.js, and more. <br /> Based in Madrid 🌃
+                    React, Next.js, Node.js, and more.
                 </p>
-                <p className="font-medium text-lg text-indigo-500">
-                    <a href="mailto:hendy@hserrano.me">hendy@hserrano.me</a>
+                <p className="font-medium text-lg text-gray-600">
+                    Based in Madrid 🌃
                 </p>
             </div>
             <div className="">
@@ -126,7 +121,7 @@ const Hero: React.FC = () => {
     );
 };
 
-export const About = () => {
+export const About: React.FC = () => {
     return (
         <div className="pb-24">
             <h2 className="text-3xl font-bold mb-10 lg:text-center">About</h2>
@@ -141,8 +136,7 @@ export const About = () => {
                 <br />
                 <p>
                     I started out as a freelancer and then worked for companies
-                    as a developer, lead developer, scrum master, and had a try
-                    at being CTO.
+                    as a developer, lead developer, scrum master, and CTO.
                 </p>
                 <br />
                 <p>
@@ -151,6 +145,12 @@ export const About = () => {
                     though my main role is development.
                 </p>
             </div>
+            <p className="font-medium text-lg text-center pt-8">
+                Get in touch —{" "}
+                <a href="mailto:hendy@hserrano.me" className=" text-indigo-500">
+                    hendy@hserrano.me
+                </a>
+            </p>
         </div>
     );
 };
