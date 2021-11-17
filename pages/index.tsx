@@ -2,11 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import { Container } from "@components";
-
 const Home: React.FC = () => {
     return (
-        <Container>
+        <div className="min-h-screen p-4">
             <Head>
                 <title>Hendy Serrano 🚀 </title>
                 <meta name="description" content="🚀 " />
@@ -22,7 +20,7 @@ const Home: React.FC = () => {
                 />
             </Head>
             <Content />
-        </Container>
+        </div>
     );
 };
 
@@ -30,7 +28,7 @@ export default Home;
 
 export const Content: React.FC = () => {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div>
                 <img
                     alt="Avatar of a cute cat with a cartoon crown"
@@ -64,7 +62,7 @@ export const Content: React.FC = () => {
                     <h6 className="mb-3 font-semibold leading-5 text-2xl">
                         About me
                     </h6>
-                    <div className="leading-loose">
+                    <div className="leading-relaxed">
                         <Item title="23 years old" suffix="🧑🏽‍💻" />
                         <Item title="Madrid, Spain" suffix="🇪🇸" />
                         <Item title="Software engineer" suffix="💾" />
@@ -77,12 +75,12 @@ export const Content: React.FC = () => {
                     <h6 className="mb-3 font-semibold leading-5 text-2xl">
                         Stuff I've made
                     </h6>
-                    <div className="leading-loose">
-                        <p className="">
+                    <div className="leading-normal">
+                        <p className="flex mb-2">
                             <span className="mr-2.5">💤</span>
                             Taking a break from products
                         </p>
-                        <p>
+                        <p className="flex mb-2">
                             <span className="mr-2.5">☁️</span>
                             Working on open source
                         </p>
@@ -92,8 +90,8 @@ export const Content: React.FC = () => {
                     <h6 className="mb-3 font-semibold leading-5 text-2xl">
                         Where to find me
                     </h6>
-                    <div className="leading-loose text-base">
-                        <p className="mb-2 text-base">
+                    <div className="leading-relaxed text-base">
+                        <p className="mb-2">
                             {" "}
                             <span className="mr-2.5">🐤</span>
                             <a
@@ -102,20 +100,18 @@ export const Content: React.FC = () => {
                             >
                                 Twitter
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
-                                @hserranome
-                            </p>
+                            <p className="text-gray-500 text-xs">@hserranome</p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">📫</span>
                             <a target="_blank" href="mailto:hendy@hserrano.me">
                                 Email
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
+                            <p className="text-gray-500 text-xs">
                                 hendy@hserrano.me
                             </p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">🎒</span>
                             <a
                                 target="_blank"
@@ -123,11 +119,9 @@ export const Content: React.FC = () => {
                             >
                                 Github
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
-                                hserrano.me
-                            </p>
+                            <p className="text-gray-500 text-xs">hserrano.me</p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">💼</span>
                             <a
                                 target="_blank"
@@ -135,9 +129,7 @@ export const Content: React.FC = () => {
                             >
                                 LinkedIn
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
-                                Rarely used
-                            </p>
+                            <p className="text-gray-500 text-xs">Rarely used</p>
                         </p>
                     </div>
                 </div>
@@ -145,40 +137,40 @@ export const Content: React.FC = () => {
                     <h6 className="mb-3 font-semibold leading-5 text-2xl">
                         Things I love
                     </h6>
-                    <div className="leading-loose">
-                        <p className="mb-2 text-base">
+                    <div className="leading-relaxed text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">📚</span>
                             <a target="_blank" href="https://logseq.com/">
                                 Logseq
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
+                            <p className="text-gray-500 text-xs">
                                 Knowledge database
                             </p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">🚀</span>
                             <a target="_blank" href="https://strapi.io/">
                                 Strapi
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
+                            <p className="text-gray-500 text-xs">
                                 API, the fast way
                             </p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">💡</span>
                             <a target="_blank" href="https://hypothes.is">
                                 Hypothesis
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
+                            <p className="text-gray-500 text-xs">
                                 Annotate directly in the browser
                             </p>
                         </p>
-                        <p className="mb-2 text-base">
+                        <p className="mb-2">
                             <span className="mr-2.5">🧰</span>
                             <a target="_blank" href="https://www.notion.so/">
                                 Notion
                             </a>
-                            <p className="text-xs text-gray-500 -mt-0.5">
+                            <p className="text-gray-500 text-xs">
                                 Organization swiss army knife
                             </p>
                         </p>
@@ -192,7 +184,7 @@ export const Content: React.FC = () => {
 const Item = (props) => {
     const { title, suffix } = props;
     return (
-        <p>
+        <p className="mb-1.5">
             <span className="mr-2.5">{suffix}</span>
             {title}
         </p>

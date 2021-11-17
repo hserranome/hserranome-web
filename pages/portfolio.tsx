@@ -2,8 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import { Container } from "@components";
-
 const Work_DATA = [
     {
         title: "Comunidad Penta",
@@ -50,7 +48,7 @@ const Work_DATA = [
 
 const Home: React.FC = () => {
     return (
-        <Container>
+        <div className="min-h-screen p-4">
             <Head>
                 <title>Hendy Serrano - Freelance developer</title>
                 <meta
@@ -74,7 +72,7 @@ const Home: React.FC = () => {
                     rel="stylesheet"
                 />
             </Head>
-            <div className="mx-auto max-w-screen-lg w-full px-8 pb-20 font-freelance text-gray-700">
+            <div className="mx-auto max-w-screen-lg w-full pb-20 font-freelance text-gray-700">
                 <Hero />
                 <About />
                 <Skills />
@@ -87,7 +85,7 @@ const Home: React.FC = () => {
                     </Link>
                 </p>
             </div>
-        </Container>
+        </div>
     );
 };
 
@@ -95,16 +93,18 @@ export default Home;
 
 const Hero: React.FC = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-12 lg:pt-36 pb-24">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-16 lg:pt-36 pb-24">
             <div>
-                <h1 className="text-lg lg:text-xl leading-tight mb-3">
+                <h1 className="text-base lg:text-xl leading-tight mb-3">
                     Hello, my name is Hendy Serrano and I am a{" "}
                 </h1>
                 <p className="text-2xl lg:text-2xl max-w-xl font-medium mb-3 leading-normal">
-                    Freelance developer with a knack for design. Specialized in
-                    React, Next.js, Node.js, and more.
+                    Freelance developer with a knack for design.{" "}
+                    <span className="text-indigo-900">
+                        Specialized in React, Next.js, Node.js, and more.
+                    </span>
                 </p>
-                <p className="font-medium text-lg text-gray-600">
+                <p className="font-medium text-lg text-gray-500">
                     Based in Madrid 🌃
                 </p>
             </div>
