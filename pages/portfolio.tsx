@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
                 <p className="text-2xl lg:text-2xl max-w-xl font-medium mb-3 leading-normal">
                     Freelance developer with a knack for design.{" "}
                     <span className="text-indigo-900">
-                        Specialized in React, Next.js, Node.js, and more.
+                        Proficient in React, Next.js, Node.js, and more.
                     </span>
                 </p>
                 <p className="font-medium text-lg text-gray-500">
