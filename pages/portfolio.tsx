@@ -220,7 +220,7 @@ const Work: React.FC = () => {
             <img
                 src={src}
                 alt=""
-                className="rounded-lg overflow-hidden shadow"
+                className="rounded-lg overflow-hidden shadow-md"
             />
         </div>
     );
