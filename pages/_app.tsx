@@ -24,14 +24,12 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
                     sizes="16x16"
                     href="/favicon-16x16.png"
                 />
-                {process.env.NODE_ENV == "production" ? (
-                    <script
-                        async
-                        defer
-                        data-website-id="168b16e3-449f-437a-abc8-d9eceff85565"
-                        src="https://analytics.mango.moe/umami.js"
-                    ></script>
-                ) : null}
+                <meta name="author" content="Hendy Serrano" />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                    charSet="UTF-8"
+                />
             </Head>
             <Component {...pageProps} />
         </>

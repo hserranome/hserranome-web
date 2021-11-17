@@ -46,7 +46,7 @@ const Work_DATA = [
     },
 ];
 
-const Home: React.FC = () => {
+const Portfolio: React.FC = () => {
     return (
         <div className="min-h-screen p-4">
             <Head>
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Portfolio;
 
 const Hero: React.FC = () => {
     return (
@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
     );
 };
 
-export const About: React.FC = () => {
+const About: React.FC = () => {
     return (
         <div className="pb-20">
             <h2 className="text-3xl font-bold mb-10 lg:text-center">About</h2>
@@ -156,9 +156,7 @@ export const About: React.FC = () => {
     );
 };
 
-export const Sep: React.FC = () => (
-    <span className="text-indigo-500 mx-3">❖</span>
-);
+const Sep: React.FC = () => <span className="text-indigo-500 mx-3">❖</span>;
 
 // Outgoing links for each one of the skills
 const Skills: React.FC = () => {

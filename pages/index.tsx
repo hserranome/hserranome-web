@@ -15,12 +15,6 @@ const Home: React.FC = () => {
                     name="keywords"
                     content="digital, product management, entrepeneurship, programming, marketing, startup, apps, development"
                 />
-                <meta name="author" content="Hendy Serrano" />
-                <meta
-                    name="viewport"
-                    content="initial-scale=1.0, width=device-width"
-                    charSet="UTF-8"
-                />
             </Head>
             <Content />
         </div>
@@ -29,7 +23,7 @@ const Home: React.FC = () => {
 
 export default Home;
 
-export const Content: React.FC = () => {
+const Content: React.FC = () => {
     return (
         <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div>
@@ -85,7 +79,7 @@ export const Content: React.FC = () => {
                         </p>
                         <p className="flex mb-2">
                             <span className="mr-2.5">☁️</span>
-                            Working on open source
+                            Helping on open source
                         </p>
                     </div>
                 </div>
@@ -94,27 +88,35 @@ export const Content: React.FC = () => {
                         Where to find me
                     </h6>
                     <div className="leading-relaxed text-base">
-                        <p className="mb-2">
-                            {" "}
-                            <span className="mr-2.5">🐤</span>
-                            <a
-                                target="_blank"
-                                href="https://twitter.com/hserranome"
-                            >
-                                Twitter
-                            </a>
+                        <div className="mb-2">
+                            <p>
+                                <span className="mr-2.5">🐤</span>
+                                <a
+                                    target="_blank"
+                                    href="https://twitter.com/hserranome"
+                                >
+                                    Twitter
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">@hserranome</p>
-                        </p>
-                        <p className="mb-2">
-                            <span className="mr-2.5">📫</span>
-                            <a target="_blank" href="mailto:hendy@hserrano.me">
-                                Email
-                            </a>
+                        </div>
+                        <div className="mb-2">
+                            <p>
+                                {" "}
+                                <span className="mr-2.5">📫</span>
+                                <a
+                                    target="_blank"
+                                    href="mailto:hendy@hserrano.me"
+                                >
+                                    Email
+                                </a>
+                            </p>
+
                             <p className="text-gray-500 text-xs">
                                 hendy@hserrano.me
                             </p>
-                        </p>
-                        <p className="mb-2">
+                        </div>
+                        <div className="mb-2">
                             <span className="mr-2.5">🎒</span>
                             <a
                                 target="_blank"
@@ -123,17 +125,19 @@ export const Content: React.FC = () => {
                                 Github
                             </a>
                             <p className="text-gray-500 text-xs">hserrano.me</p>
-                        </p>
-                        <p className="mb-2">
-                            <span className="mr-2.5">💼</span>
-                            <a
-                                target="_blank"
-                                href="https://www.linkedin.com/in/hendy-s-73b532b0/"
-                            >
-                                LinkedIn
-                            </a>
+                        </div>
+                        <div className="mb-2">
+                            <p>
+                                <span className="mr-2.5">💼</span>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/hendy-s-73b532b0/"
+                                >
+                                    LinkedIn
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">Rarely used</p>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div className="max-w-md">
@@ -141,42 +145,54 @@ export const Content: React.FC = () => {
                         Things I love
                     </h6>
                     <div className="leading-relaxed text-base">
-                        <p className="mb-2">
-                            <span className="mr-2.5">📚</span>
-                            <a target="_blank" href="https://logseq.com/">
-                                Logseq
-                            </a>
+                        <div className="mb-2">
+                            <p>
+                                <span className="mr-2.5">📚</span>
+                                <a target="_blank" href="https://logseq.com/">
+                                    Logseq
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">
                                 Knowledge database
                             </p>
-                        </p>
-                        <p className="mb-2">
-                            <span className="mr-2.5">🚀</span>
-                            <a target="_blank" href="https://strapi.io/">
-                                Strapi
-                            </a>
+                        </div>
+                        <div className="mb-2">
+                            <p>
+                                {" "}
+                                <span className="mr-2.5">🚀</span>
+                                <a target="_blank" href="https://strapi.io/">
+                                    Strapi
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">
                                 API, the fast way
                             </p>
-                        </p>
-                        <p className="mb-2">
-                            <span className="mr-2.5">💡</span>
-                            <a target="_blank" href="https://hypothes.is">
-                                Hypothesis
-                            </a>
+                        </div>
+                        <div className="mb-2">
+                            <p>
+                                <span className="mr-2.5">💡</span>
+                                <a target="_blank" href="https://hypothes.is">
+                                    Hypothesis
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">
                                 Annotate directly in the browser
                             </p>
-                        </p>
-                        <p className="mb-2">
-                            <span className="mr-2.5">🧰</span>
-                            <a target="_blank" href="https://www.notion.so/">
-                                Notion
-                            </a>
+                        </div>
+                        <div className="mb-2">
+                            <p>
+                                <span className="mr-2.5">🧰</span>
+                                <a
+                                    target="_blank"
+                                    href="https://www.notion.so/"
+                                >
+                                    Notion
+                                </a>
+                            </p>
                             <p className="text-gray-500 text-xs">
                                 Organization swiss army knife
                             </p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
