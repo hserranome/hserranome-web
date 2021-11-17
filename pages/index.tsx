@@ -6,8 +6,11 @@ const Home: React.FC = () => {
     return (
         <div className="min-h-screen p-4">
             <Head>
-                <title>Hendy Serrano 🚀 </title>
-                <meta name="description" content="🚀 " />
+                <title>Hendy Serrano</title>
+                <meta
+                    name="description"
+                    content="A 23 years old sofware engineer from Madrid. Currently looking for freelance projects 🔍  Check out my work in my portfolio ✨"
+                />
                 <meta
                     name="keywords"
                     content="digital, product management, entrepeneurship, programming, marketing, startup, apps, development"

@@ -50,10 +50,13 @@ const Home: React.FC = () => {
     return (
         <div className="min-h-screen p-4">
             <Head>
-                <title>Hendy Serrano - Freelance developer</title>
+                <title>
+                    Hendy Serrano | Full-stack developer | React, Node.js,
+                    Next.js, and more
+                </title>
                 <meta
                     name="description"
-                    content="Building great products with ReactJS. A designer and developer from Madrid 🌃 who has been developing products for over four years."
+                    content="Freelance developer with a knack for design. Specialized in React, Next.js, Node.js, and more. Based in Madrid 🌃"
                 />
                 <meta
                     name="keywords"
@@ -93,7 +96,7 @@ export default Home;
 
 const Hero: React.FC = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-16 lg:pt-36 pb-24">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-16 lg:pt-36 pb-20">
             <div>
                 <h1 className="text-base lg:text-xl leading-tight mb-3">
                     Hello, my name is Hendy Serrano and I am a{" "}
@@ -121,7 +124,7 @@ const Hero: React.FC = () => {
 
 export const About: React.FC = () => {
     return (
-        <div className="pb-24">
+        <div className="pb-20">
             <h2 className="text-3xl font-bold mb-10 lg:text-center">About</h2>
             <div className="text-base md:text-lg max-w-2xl text-justify lg:mx-auto">
                 <p>
@@ -160,12 +163,14 @@ export const Sep: React.FC = () => (
 // Outgoing links for each one of the skills
 const Skills: React.FC = () => {
     return (
-        <div className="pb-24">
+        <div className="pb-20">
             <h2 className="text-3xl font-bold mb-10 lg:text-center">Skills</h2>
-            <div className="text-base md:text-lg max-w-2xl lg:mx-auto">
+            <div className="max-w-2xl lg:mx-auto">
                 <div className="mb-6">
-                    <p className="font-semibold text-xl mb-1">Front-end</p>
-                    <p>
+                    <p className="font-semibold text-lg md:text-xl mb-1">
+                        Front-end
+                    </p>
+                    <p className="text-base md:text-lg">
                         JavaScript <Sep /> Single-page Applications (SPA){" "}
                         <Sep /> ES6, TypeScript <Sep /> React <Sep /> Redux{" "}
                         <Sep /> Next.js <Sep /> Gatsby <Sep /> TypeScript{" "}
@@ -174,8 +179,10 @@ const Skills: React.FC = () => {
                     </p>
                 </div>
                 <div className="mb-6">
-                    <p className="font-semibold text-xl mb-1">Back-end</p>
-                    <p>
+                    <p className="font-semibold text-lg md:text-xl mb-1">
+                        Back-end
+                    </p>
+                    <p className="text-base md:text-lg">
                         Node.js <Sep /> Express <Sep /> PostgreSQL <Sep />{" "}
                         MongoDB <Sep /> REST <Sep /> Strapi (Headless CMS){" "}
                         <Sep /> Firebase <Sep /> Third-party APIs (Google Maps,
@@ -184,16 +191,20 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className="mb-6">
-                    <p className="font-semibold text-xl mb-1">Design</p>
-                    <p>
+                    <p className="font-semibold text-lg md:text-xl mb-1">
+                        Design
+                    </p>
+                    <p className="text-base md:text-lg">
                         UI design <Sep /> UX (User Experience) <Sep /> Figma{" "}
                         <Sep /> Photoshop <Sep /> Illustrator <Sep /> Sketch.
                     </p>
                 </div>
 
                 <div className="mb-6">
-                    <p className="font-semibold text-xl mb-1">Other</p>
-                    <p>
+                    <p className="font-semibold text-lg md:text-xl mb-1">
+                        Other
+                    </p>
+                    <p className="text-base md:text-lg">
                         Search engine optimization (SEO) <Sep /> Heroku <Sep />{" "}
                         Ubuntu <Sep /> AWS
                         <Sep /> Netlify <Sep /> Docker <Sep /> Git <Sep />{" "}
