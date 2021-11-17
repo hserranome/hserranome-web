@@ -132,7 +132,7 @@ export const About: React.FC = () => {
                     posted it on a forum so that other people could play with
                     me. I've been tinkering with technology ever since. I became
                     more and more interested in development, and I started
-                    working as a web developer at 18.
+                    working as a web developer when I was eighteen.
                 </p>
                 <br />
                 <p>
@@ -157,7 +157,7 @@ export const About: React.FC = () => {
 };
 
 export const Sep: React.FC = () => (
-    <span className="text-indigo-500 mx-2">❖</span>
+    <span className="text-indigo-500 mx-3">❖</span>
 );
 
 // Outgoing links for each one of the skills
