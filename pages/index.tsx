@@ -43,7 +43,7 @@ const Content: React.FC = () => {
                 </div>
                 <div className="lg:w-1/2">
                     <p className="text-xl text-gray-800 md:text-xl">
-                        Currently looking for freelance projects 🔍
+                        Currently looking for freelance projects part-time 🔍
                         <br />
                         <Link href="/portfolio">
                             <a className="text-indigo-600">
