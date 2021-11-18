@@ -82,11 +82,17 @@ const Portfolio: React.FC = () => {
                 {/* Experience */}
                 <Work />
                 {/* Contact with email, call scheduling, and rates */}
-                <p className="font-medium text-lg text-indigo-500 text-center mt-8">
-                    <Link href="/">
-                        <a>Go to homepage</a>
-                    </Link>
-                </p>
+                <div className="font-medium  text-xl text-center">
+                    <p className="pt-8">
+                        Available part-time. <br /> Get in touch —{" "}
+                        <a
+                            href="mailto:hendy@hserrano.me"
+                            className=" text-indigo-500"
+                        >
+                            hendy@hserrano.me
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     );
@@ -110,6 +116,17 @@ const Hero: React.FC = () => {
                 <p className="font-medium text-lg text-gray-500">
                     Based in Madrid 🌃
                 </p>
+                <div className="font-medium text-lg text-left">
+                    <p className="pt-8">
+                        Available part-time. <br /> Get in touch —{" "}
+                        <a
+                            href="mailto:hendy@hserrano.me"
+                            className=" text-indigo-500"
+                        >
+                            hendy@hserrano.me
+                        </a>
+                    </p>
+                </div>
             </div>
             <div className="">
                 <img
@@ -146,12 +163,6 @@ const About: React.FC = () => {
                     though my main role is development.
                 </p>
             </div>
-            <p className="font-medium text-lg text-center pt-8">
-                Get in touch —{" "}
-                <a href="mailto:hendy@hserrano.me" className=" text-indigo-500">
-                    hendy@hserrano.me
-                </a>
-            </p>
         </div>
     );
 };
