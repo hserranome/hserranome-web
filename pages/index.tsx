@@ -43,11 +43,11 @@ const Content: React.FC = () => {
                 </div>
                 <div className="lg:w-1/2">
                     <p className="text-xl text-gray-800 md:text-xl">
-                        Currently looking for freelance projects part-time 🔍
+                        Currently looking for work 🔍
                         <br />
                         <Link href="/portfolio">
                             <a className="text-indigo-600">
-                                Check out my work in my portfolio
+                                Check out my portfolio
                             </a>
                         </Link>
                         ✨

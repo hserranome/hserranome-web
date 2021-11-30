@@ -56,11 +56,11 @@ const Portfolio: React.FC = () => {
                 </title>
                 <meta
                     name="description"
-                    content="Freelance developer with a knack for design. Specialized in React, Next.js, Node.js, and more. Based in Madrid 🌃"
+                    content="Full-stack developer with a knack for design. Specialized in React, Next.js, Node.js, and more. Based in Madrid 🌃"
                 />
                 <meta
                     name="keywords"
-                    content="ReactJS, freelance, Javascript"
+                    content="ReactJS, full stack, developer, React Native, Node.js, Express.js, freelance, Javascript"
                 />
                 <meta name="author" content="Hendy Serrano" />
                 <meta
@@ -84,7 +84,7 @@ const Portfolio: React.FC = () => {
                 {/* Contact with email, call scheduling, and rates */}
                 <div className="font-medium  text-xl text-center">
                     <p className="pt-8">
-                        Available part-time. <br /> Get in touch —{" "}
+                        Get in touch —{" "}
                         <a
                             href="mailto:hendy@hserrano.me"
                             className=" text-indigo-500"
@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
                     Hello, my name is Hendy Serrano and I am a{" "}
                 </h1>
                 <p className="text-2xl lg:text-2xl max-w-xl font-medium mb-3 leading-normal">
-                    Freelance developer with a knack for design.{" "}
+                    Full-stack developer with a knack for design.{" "}
                     <span className="text-indigo-900">
                         Proficient in React, Next.js, Node.js, and more.
                     </span>
@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
                 </p>
                 <div className="font-medium text-lg text-left">
                     <p className="pt-8">
-                        Available part-time. <br /> Get in touch —{" "}
+                        Get in touch —{" "}
                         <a
                             href="mailto:hendy@hserrano.me"
                             className=" text-indigo-500"
@@ -153,8 +153,7 @@ const About: React.FC = () => {
                 </p>
                 <br />
                 <p>
-                    I started out as a freelancer and then worked for companies
-                    as a developer, lead developer, scrum master, and CTO.
+                    I started out as a freelancer and then worked for an agency in multiple projects as a developer, lead developer, scrum master, and CTO.
                 </p>
                 <br />
                 <p>
@@ -173,7 +172,7 @@ const Sep: React.FC = () => <span className="text-indigo-500 mx-3">❖</span>;
 const Skills: React.FC = () => {
     return (
         <div className="pb-20">
-            <h2 className="text-3xl font-bold mb-10 lg:text-center">Skills</h2>
+            <h2 className="text-3xl font-bold mb-10 lg:text-center">Technologies</h2>
             <div className="max-w-2xl lg:mx-auto">
                 <div className="mb-6">
                     <p className="font-semibold text-lg md:text-xl mb-1">
