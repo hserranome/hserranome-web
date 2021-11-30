@@ -156,10 +156,17 @@ const About: React.FC = () => {
                 </p>
                 <br />
                 <p>
-                    I started out as a freelancer and then worked in an agency
-                    in multiple projects with diverse tech stacks as a
-                    developer, lead developer in agile projects, and supervising
-                    and directing as a CTO.
+                    I started out as a freelancer in 2018 and then worked in{" "}
+                    <a
+                        href="https://akimad.com"
+                        target="_blank"
+                        referrerPolicy="no-referrer"
+                    >
+                        Akimad
+                    </a>{" "}
+                    (February 2019 - July 2021) handling multiple projects with
+                    diverse tech stacks as a solo developer, lead developer in
+                    an agile workflow, and supervising and directing as a CTO.
                 </p>
                 <br />
                 <p>
