@@ -6,43 +6,47 @@ const Work_DATA = [
     {
         title: "Comunidad Penta",
         img: "/static/images/penta.png",
-        description: "Upcoming social network for classical musicians.",
+        description:
+            "Social network for classical musicians, working with conservatories to provide musicians an online meeting spot where they can share their art with other professionals.",
+        position: "Co-founder, UI/UX design, developement.",
         technologies: "Flutter, Node.js, Strapi, PostgreSQL, Firebase.",
         link: "https://comunidadpenta.com",
-        areas: "Design and development",
-    },
-    {
-        title: "Trabajos Remotos",
-        img: "/static/images/trabajos.jpeg",
-        description: "Remote job board for Spanish-speaking workers.",
-        technologies: "Next.js, React, Node.js, Strapi, SQLite.",
-        link: "https://trabajosremotos.es",
-        areas: "Design and development",
-    },
-    {
-        title: "Notionmango",
-        img: "/static/images/notion.jpeg",
-        description: "Templates and tips for the Notion Spanish community.",
-        technologies: "Wordpress, React.",
-        link: "https://notionmango.com",
-        areas: "Design and development",
     },
     {
         title: "Hobeen",
         img: "/static/images/hobeen.png",
-        description: "App using IoT technology to promote a greener lifestyle.",
+        description:
+            "IoT Android and iOS app integrating well known devices from multiple brands in a single app, with gamification at it's core to help people to be more eco-friendly.",
+        position: "Lead developer.",
         technologies: "React Native, Node.js, PostgreSQL.",
         link: "https://www.hobeen.com",
-        areas: "Development",
     },
     {
         title: "Seetyz",
         img: "/static/images/seetyz.png",
         description:
-            "Booking, pickup, and events for small businesses in Biarritz.",
+            "iOS and Android app and business dashboard empowering small businesses in Biarritz, giving customers tools for booking, pickup, and events.",
         technologies: "React Native, React, Node.js, PostgreSQL.",
+        position: "Lead developer.",
         link: "https://seetyz.com",
-        areas: "Development",
+    },
+    {
+        title: "Trabajos Remotos",
+        img: "/static/images/trabajos.jpeg",
+        description:
+            "Job board providing a platform for employers to find the best Spanish-speaking remote workers from LATAM and Spain.",
+        technologies: "Next.js, React, Node.js, Strapi, SQLite.",
+        position: "Co-founder, UI/UX design, developement.",
+        link: "https://trabajosremotos.es",
+    },
+    {
+        title: "Notionmango",
+        img: "/static/images/notion.jpeg",
+        description:
+            "Blog sharing templates, tips, and thougts around the Notion spanish-speaking community.",
+        technologies: "Wordpress, React.",
+        position: "Co-founder, UI/UX design, developement.",
+        link: "https://notionmango.com",
     },
 ];
 
@@ -153,7 +157,9 @@ const About: React.FC = () => {
                 </p>
                 <br />
                 <p>
-                    I started out as a freelancer and then worked for an agency in multiple projects as a developer, lead developer, scrum master, and CTO.
+                    I started out as a freelancer and then worked for an agency
+                    in multiple projects as a developer, lead developer, scrum
+                    master, and CTO.
                 </p>
                 <br />
                 <p>
@@ -172,7 +178,9 @@ const Sep: React.FC = () => <span className="text-indigo-500 mx-3">❖</span>;
 const Skills: React.FC = () => {
     return (
         <div className="pb-20">
-            <h2 className="text-3xl font-bold mb-10 lg:text-center">Technologies</h2>
+            <h2 className="text-3xl font-bold mb-10 lg:text-center">
+                Technologies
+            </h2>
             <div className="max-w-2xl lg:mx-auto">
                 <div className="mb-6">
                     <p className="font-semibold text-lg md:text-xl mb-1">
@@ -237,8 +245,13 @@ const Work: React.FC = () => {
     const Text = ({ data }) => (
         <div className="pt-0 lg:pt-3 md:w-1/2">
             <h2 className="text-2xl font-medium mb-4">{data.title}</h2>
-            <p className="mb-3">{data.description}</p>
-            <p className="mb-4 text-gray-500">{data.technologies}</p>
+            <p className="mb-4">{data.description}</p>
+            <p className="mb-2">
+                <b className="font-medium">Role:</b> {data.position}
+            </p>
+            <p className="mb-3">
+                <b className="font-medium">Tech stack:</b> {data.technologies}
+            </p>
             <a
                 href={data.link}
                 className="font-medium text-indigo-800 text-opacity-90"
