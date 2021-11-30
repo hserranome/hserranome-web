@@ -8,7 +8,7 @@ const Work_DATA = [
         img: "/static/images/penta.png",
         description:
             "Social network for classical musicians, working with conservatories to provide musicians an online meeting spot where they can share their art with other professionals.",
-        position: "Co-founder, UI/UX design, developement.",
+        position: "Co-founder, UI/UX design, development.",
         technologies: "Flutter, Node.js, Strapi, PostgreSQL, Firebase.",
         link: "https://comunidadpenta.com",
     },
@@ -36,7 +36,7 @@ const Work_DATA = [
         description:
             "Job board providing a platform for employers to find the best Spanish-speaking remote workers from LATAM and Spain.",
         technologies: "Next.js, React, Node.js, Strapi, SQLite.",
-        position: "Co-founder, UI/UX design, developement.",
+        position: "Co-founder, UI/UX design, development.",
         link: "https://trabajosremotos.es",
     },
     {
@@ -45,7 +45,7 @@ const Work_DATA = [
         description:
             "Blog sharing templates, tips, and thougts around the Notion spanish-speaking community.",
         technologies: "Wordpress, React.",
-        position: "Co-founder, UI/UX design, developement.",
+        position: "Co-founder, UI/UX design, development.",
         link: "https://notionmango.com",
     },
 ];
