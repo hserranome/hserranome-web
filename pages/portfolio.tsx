@@ -274,7 +274,7 @@ const Work: React.FC = () => {
     return (
         <div className="pb-6">
             <h2 className="text-3xl font-bold mb-10 sm:mb-12 lg:text-center">
-                Work
+                Projects
             </h2>
             {Work_DATA.map((project, i) => (
                 <div
