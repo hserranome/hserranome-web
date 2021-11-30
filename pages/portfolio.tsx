@@ -149,23 +149,23 @@ const About: React.FC = () => {
             <h2 className="text-3xl font-bold mb-10 lg:text-center">About</h2>
             <div className="text-base md:text-lg max-w-2xl text-justify lg:mx-auto">
                 <p>
-                    At the age of ten, I set up my own Minecraft server and
-                    posted it on a forum so that other people could play with
-                    me. I've been tinkering with technology ever since. I became
-                    more and more interested in development, and I started
-                    working as a web developer when I was eighteen.
+                    I've been interested in sofware and development ever since I
+                    setup my first public Minecraft server at the age of ten,
+                    which had around 60 players at one point. Later, I started
+                    working as a web developer when I was nineteen.
                 </p>
                 <br />
                 <p>
-                    I started out as a freelancer and then worked for an agency
-                    in multiple projects as a developer, lead developer, scrum
-                    master, and CTO.
+                    I started out as a freelancer and then worked in an agency
+                    in multiple projects with diverse tech stacks as a
+                    developer, lead developer in agile projects, and supervising
+                    and directing as a CTO.
                 </p>
                 <br />
                 <p>
-                    I've always enjoyed UI design and I'm always trying to
-                    improve the user experience on everything I build, even
-                    though my main role is development.
+                    I've always enjoyed UI/UX design and I'm always trying to
+                    improve the user experience on everything I work on through
+                    both development and design.
                 </p>
             </div>
         </div>
