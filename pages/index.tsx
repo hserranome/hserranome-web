@@ -62,8 +62,8 @@ const Content: React.FC = () => {
                     <div className="leading-relaxed">
                         <Item title="23 years old" suffix="🧑🏽‍💻" />
                         <Item title="Madrid, Spain" suffix="🇪🇸" />
-                        <Item title="Software engineer" suffix="💾" />
-                        <Item title="Indie hacker" suffix="👷🏽" />
+                        <Item title="Web developer" suffix="💾" />
+                        {/* <Item title="Indie hacker" suffix="👷🏽" /> */}
                         <Item title="Cat enthusiasm" suffix="🐈" />
                         <Item title="Pizza supporter" suffix="🍕" />
                     </div>
