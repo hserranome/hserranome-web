@@ -151,7 +151,7 @@ const About: React.FC = () => {
                 <p>
                     I've been interested in sofware and development ever since I
                     setup my first public Minecraft server at the age of ten,
-                    which had around 60 players at one point. Later, I started
+                    which had around 40 players at one point. Later, I started
                     working as a web developer when I was nineteen.
                 </p>
                 <br />
@@ -164,15 +164,14 @@ const About: React.FC = () => {
                     >
                         Akimad
                     </a>{" "}
-                    (February 2019 - July 2021) handling multiple projects with
-                    diverse tech stacks as a solo developer, lead developer in
-                    an agile workflow, and supervising and directing as a CTO.
+                    (February 2019 - July 2021) on +10 full-stack developer, and
+                    later as lead developer in an agile workflow.
                 </p>
                 <br />
                 <p>
-                    I've always enjoyed UI/UX design and I'm always trying to
-                    improve the user experience on everything I work on through
-                    both development and design.
+                    I've always enjoyed UI/UX design and I'm always looking for
+                    ways to improve the user experience on everything I work on
+                    through both development and design.
                 </p>
             </div>
         </div>
@@ -197,8 +196,8 @@ const Skills: React.FC = () => {
                         JavaScript <Sep /> Single-page Applications (SPA){" "}
                         <Sep /> ES6, TypeScript <Sep /> React <Sep /> Redux{" "}
                         <Sep /> Next.js <Sep /> Gatsby <Sep /> TypeScript{" "}
-                        <Sep /> CSS/SCSS <Sep /> Material UI <Sep /> Tailwind
-                        CSS
+                        <Sep /> CSS/SCSS <Sep /> React Native <Sep /> Material
+                        UI <Sep /> Tailwind CSS
                     </p>
                 </div>
                 <div className="mb-6">
@@ -206,20 +205,10 @@ const Skills: React.FC = () => {
                         Back-end
                     </p>
                     <p className="text-base md:text-lg">
-                        Node.js <Sep /> Express <Sep /> PostgreSQL <Sep />{" "}
-                        MongoDB <Sep /> REST <Sep /> Strapi (Headless CMS){" "}
-                        <Sep /> Firebase <Sep /> Third-party APIs (Google Maps,
-                        Stripe, etc.)
-                    </p>
-                </div>
-
-                <div className="mb-6">
-                    <p className="font-semibold text-lg md:text-xl mb-1">
-                        Design
-                    </p>
-                    <p className="text-base md:text-lg">
-                        UI design <Sep /> UX (User Experience) <Sep /> Figma{" "}
-                        <Sep /> Photoshop <Sep /> Illustrator <Sep /> Sketch.
+                        Node.js <Sep /> Express <Sep /> SQL (PostgreSQL/MySQL){" "}
+                        <Sep /> MongoDB <Sep /> REST <Sep /> Strapi (Headless
+                        CMS) <Sep /> Firebase <Sep /> Third-party APIs (Google
+                        Maps, Stripe, etc.)
                     </p>
                 </div>
 
@@ -229,9 +218,9 @@ const Skills: React.FC = () => {
                     </p>
                     <p className="text-base md:text-lg">
                         Search engine optimization (SEO) <Sep /> Heroku <Sep />{" "}
-                        Ubuntu <Sep /> AWS
-                        <Sep /> Netlify <Sep /> Docker <Sep /> Git <Sep />{" "}
-                        GitHub.
+                        Ubuntu <Sep /> AWS <Sep /> Netlify <Sep /> Docker{" "}
+                        <Sep /> Git <Sep /> GitHub <Sep /> UI design <Sep /> UX
+                        (User Experience)
                     </p>
                 </div>
             </div>
@@ -253,9 +242,9 @@ const Work: React.FC = () => {
         <div className="pt-0 lg:pt-3 md:w-1/2">
             <h2 className="text-2xl font-medium mb-4">{data.title}</h2>
             <p className="mb-4">{data.description}</p>
-            <p className="mb-2">
+            {/* <p className="mb-2">
                 <b className="font-medium">Role:</b> {data.position}
-            </p>
+            </p> */}
             <p className="mb-3">
                 <b className="font-medium">Tech stack:</b> {data.technologies}
             </p>
