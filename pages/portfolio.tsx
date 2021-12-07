@@ -16,7 +16,7 @@ const Work_DATA = [
         title: "Hobeen",
         img: "/static/images/hobeen.png",
         description:
-            "IoT Android and iOS app integrating well known devices from multiple brands in a single app, with gamification at it's core to help people to be more eco-friendly.",
+            "IoT Android and iOS app integrating well known devices from multiple brands in a single app, with gamification at its core to help people to be more eco-friendly.",
         position: "Lead developer.",
         technologies: "React Native, Node.js, PostgreSQL.",
         link: "https://www.hobeen.com",
@@ -43,7 +43,7 @@ const Work_DATA = [
         title: "Notionmango",
         img: "/static/images/notion.jpeg",
         description:
-            "Blog sharing templates, tips, and thougts around the Notion spanish-speaking community.",
+            "Blog sharing templates, tips, and thoughts around the Notion spanish-speaking community.",
         technologies: "Wordpress, React.",
         position: "Co-founder, UI/UX design, development.",
         link: "https://notionmango.com",
