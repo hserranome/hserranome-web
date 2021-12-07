@@ -131,7 +131,7 @@ const Content: React.FC = () => {
                                 <span className="mr-2.5">💼</span>
                                 <a
                                     target="_blank"
-                                    href="https://www.linkedin.com/in/hendy-s-73b532b0/"
+                                    href="https://www.linkedin.com/in/hendy-serrano/"
                                 >
                                     LinkedIn
                                 </a>
