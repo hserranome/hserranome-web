@@ -242,9 +242,9 @@ const Work: React.FC = () => {
         <div className="pt-0 lg:pt-3 md:w-1/2">
             <h2 className="text-2xl font-medium mb-4">{data.title}</h2>
             <p className="mb-4">{data.description}</p>
-            {/* <p className="mb-2">
+            <p className="mb-2">
                 <b className="font-medium">Role:</b> {data.position}
-            </p> */}
+            </p>
             <p className="mb-3">
                 <b className="font-medium">Tech stack:</b> {data.technologies}
             </p>
