@@ -43,11 +43,10 @@ const Content: React.FC = () => {
                 </div>
                 <div className="lg:w-1/2">
                     <p className="text-xl text-gray-800 md:text-xl">
-                        Currently looking for work 🔍
                         <br />
                         <Link href="/portfolio">
                             <a className="text-indigo-600">
-                                Check out my portfolio
+                                Check out my portfolio 🔍 (Last updated 2021)
                             </a>
                         </Link>
                         ✨
@@ -60,12 +59,12 @@ const Content: React.FC = () => {
                         About me
                     </h6>
                     <div className="leading-relaxed">
-                        <Item title="23 years old" suffix="🧑🏽‍💻" />
+                        <Item title="24 years old" suffix="🧑🏽‍💻" />
                         <Item title="Madrid, Spain" suffix="🇪🇸" />
                         <Item title="Web developer" suffix="💾" />
                         {/* <Item title="Indie hacker" suffix="👷🏽" /> */}
                         <Item title="Cat enthusiasm" suffix="🐈" />
-                        <Item title="Pizza supporter" suffix="🍕" />
+                        <Item title="Pizza advocate" suffix="🍕" />
                     </div>
                 </div>
                 <div className="max-w-md">
@@ -74,12 +73,16 @@ const Content: React.FC = () => {
                     </h6>
                     <div className="leading-normal">
                         <p className="flex mb-2">
-                            <span className="mr-2.5">💤</span>
-                            Taking a break from products
+                            <span className="mr-2.5">💼</span>
+                            https://trabajosremotos.es/
                         </p>
                         <p className="flex mb-2">
-                            <span className="mr-2.5">☁️</span>
-                            Helping on open source
+                            <span className="mr-2.5">🔍</span>
+                            Looking for interesting open source projects
+                        </p>
+                        <p className="flex mb-2">
+                            <span className="mr-2.5">🍳 </span>
+                            Cooking something up...
                         </p>
                     </div>
                 </div>
@@ -136,7 +139,6 @@ const Content: React.FC = () => {
                                     LinkedIn
                                 </a>
                             </p>
-                            <p className="text-gray-500 text-xs">Rarely used</p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +160,6 @@ const Content: React.FC = () => {
                         </div>
                         <div className="mb-2">
                             <p>
-                                {" "}
                                 <span className="mr-2.5">🚀</span>
                                 <a target="_blank" href="https://strapi.io/">
                                     Strapi
@@ -170,13 +171,16 @@ const Content: React.FC = () => {
                         </div>
                         <div className="mb-2">
                             <p>
-                                <span className="mr-2.5">💡</span>
-                                <a target="_blank" href="https://hypothes.is">
-                                    Hypothesis
+                                <span className="mr-2.5">💬</span>
+                                <a
+                                    target="_blank"
+                                    href="https://chat.openai.com/"
+                                >
+                                    ChatGPT
                                 </a>
                             </p>
                             <p className="text-gray-500 text-xs">
-                                Annotate directly in the browser
+                                Language model for your everyday use
                             </p>
                         </div>
                         <div className="mb-2">

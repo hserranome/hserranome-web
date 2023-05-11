@@ -1,17 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 
 const Work_DATA = [
-    {
-        title: "Comunidad Penta",
-        img: "/static/images/penta.png",
-        description:
-            "Social network for classical musicians, working with conservatories to provide musicians an online meeting spot where they can share their art with other professionals.",
-        position: "Co-founder, UI/UX design, development.",
-        technologies: "Flutter, Node.js, Strapi, PostgreSQL, Firebase.",
-        link: "https://comunidadpenta.com",
-    },
     {
         title: "Hobeen",
         img: "/static/images/hobeen.png",
@@ -38,15 +28,6 @@ const Work_DATA = [
         technologies: "Next.js, React, Node.js, Strapi, SQLite.",
         position: "Co-founder, UI/UX design, development.",
         link: "https://trabajosremotos.es",
-    },
-    {
-        title: "Notionmango",
-        img: "/static/images/notion.jpeg",
-        description:
-            "Blog sharing templates, tips, and thoughts around the Notion spanish-speaking community.",
-        technologies: "Wordpress, React.",
-        position: "Co-founder, UI/UX design, development.",
-        link: "https://notionmango.com",
     },
 ];
 
@@ -270,7 +251,7 @@ const Work: React.FC = () => {
     return (
         <div className="pb-6">
             <h2 className="text-3xl font-bold mb-10 sm:mb-12 lg:text-center">
-                Projects
+                Some projects
             </h2>
             {Work_DATA.map((project, i) => (
                 <div
