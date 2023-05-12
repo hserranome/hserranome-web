@@ -9,7 +9,7 @@ const Home: React.FC = () => {
                 <title>Hendy Serrano</title>
                 <meta
                     name="description"
-                    content="A 23 years old sofware engineer from Madrid. Currently looking for freelance projects 🔍  Check out my work in my portfolio ✨"
+                    content="A 24 years old sofware engineer from Madrid. Currently looking for freelance projects 🔍  Check out my work in my portfolio ✨"
                 />
                 <meta
                     name="keywords"
@@ -62,7 +62,6 @@ const Content: React.FC = () => {
                         <Item title="24 years old" suffix="🧑🏽‍💻" />
                         <Item title="Madrid, Spain" suffix="🇪🇸" />
                         <Item title="Web developer" suffix="💾" />
-                        {/* <Item title="Indie hacker" suffix="👷🏽" /> */}
                         <Item title="Cat enthusiasm" suffix="🐈" />
                         <Item title="Pizza advocate" suffix="🍕" />
                     </div>
@@ -110,7 +109,6 @@ const Content: React.FC = () => {
                         </div>
                         <div className="mb-2">
                             <p>
-                                {" "}
                                 <span className="mr-2.5">📫</span>
                                 <a
                                     target="_blank"
