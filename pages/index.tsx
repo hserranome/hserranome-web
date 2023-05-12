@@ -46,7 +46,7 @@ const Content: React.FC = () => {
                         <br />
                         <Link href="/portfolio">
                             <a className="text-indigo-600">
-                                Check out my portfolio 🔍 (Last updated 2021)
+                                Check out some of my work 🔍
                             </a>
                         </Link>
                         ✨
@@ -74,7 +74,12 @@ const Content: React.FC = () => {
                     <div className="leading-normal">
                         <p className="flex mb-2">
                             <span className="mr-2.5">💼</span>
-                            https://trabajosremotos.es/
+                            <a
+                                target="_blank"
+                                href="https://trabajosremotos.es/"
+                            >
+                                Trabajos Remotos
+                            </a>
                         </p>
                         <p className="flex mb-2">
                             <span className="mr-2.5">🔍</span>
