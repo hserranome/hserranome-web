@@ -9,7 +9,7 @@ const Home: React.FC = () => {
                 <title>Hendy Serrano</title>
                 <meta
                     name="description"
-                    content="A 24 years old sofware engineer from Madrid. Currently looking for freelance projects 🔍  Check out my work in my portfolio ✨"
+                    content="Full stack developer from Valencia, Spain."
                 />
                 <meta
                     name="keywords"
