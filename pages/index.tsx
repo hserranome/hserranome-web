@@ -59,8 +59,8 @@ const Content: React.FC = () => {
                         About me
                     </h6>
                     <div className="leading-relaxed">
-                        <Item title="24 years old" suffix="🧑🏽‍💻" />
-                        <Item title="Madrid, Spain" suffix="🇪🇸" />
+                        <Item title="25 years old" suffix="🧑🏽‍💻" />
+                        <Item title="Valencia, Spain" suffix="🇪🇸" />
                         <Item title="Web developer" suffix="💾" />
                         <Item title="Cat enthusiasm" suffix="🐈" />
                         <Item title="Pizza advocate" suffix="🍕" />
