@@ -1,0 +1,25 @@
+@tailwind base;
+main {
+	@apply mx-auto;
+	@apply max-w-4xl;
+	@apply mt-16;
+	@apply mb-16;
+}
+p {
+	@apply text-base;
+	@apply mb-1;
+}
+a {
+	@apply underline;
+	@apply text-blue-500;
+}
+hr {
+	@apply my-4;
+}
+ul {
+	@apply list-disc;
+	@apply pl-6;
+}
+li {
+	@apply mb-1;
+}
