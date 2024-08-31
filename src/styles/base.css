@@ -2,6 +2,7 @@
 main {
 	@apply mx-auto;
 	@apply max-w-4xl;
+	@apply px-4;
 	@apply mt-16;
 	@apply mb-16;
 }

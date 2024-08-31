@@ -16,9 +16,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<p class="text-xl">For work stuff check my <a href="/work">work</a> page.</p>
 			<hr/>
 			<p>Here's a pic of my cats:</p>
-			<div class="card h-96 w-96 ">
-				<img src="/nekopi1.jpg" alt="Neko and Copi" class="front mt-4 h-96 w-96 object-cover rounded-full"/>
-				<img src="/nekopi2.jpg" alt="Neko and Copi again" class="back mt-4 h-96 w-96 object-cover rounded-full">
+			<div class="card max-h-96 max-w-96">
+				<img src="/nekopi1.jpg" alt="Neko and Copi" class="front"/>
+				<img src="/nekopi2.jpg" alt="Neko and Copi again" class="back">
 			</div>
 		</main>
 	</body>
@@ -29,6 +29,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			position: relative;
 		}
 		.front, .back {
+			@apply rounded-full mt-4;
 			transition: all 0.25s linear;
 			backface-visibility: hidden;
 			position: absolute;
@@ -37,7 +38,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		}
 		.front {
 			transform: rotateY(0deg);
-
 			z-index: 2;
 		}
 		.card:hover .front {
@@ -45,7 +45,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		}
 		.back {
 			transform: rotateY(180deg);
-
 			z-index: 1;
 		}
 		.card:hover .back {
