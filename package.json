@@ -3,6 +3,7 @@
 	"type": "module",
 	"version": "0.0.1",
 	"license": "UNLICENSED",
+	"packageManager": "pnpm@9.9.0",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
 		"dev": "astro dev",
