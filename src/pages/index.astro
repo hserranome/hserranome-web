@@ -9,7 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body hx-boost="true" hx-indicator="body">
+	<body>
 		<Header />
 		<main>
 			<b><p class="text-2xl mb-2">Hi. Hendy Serrano here.</p></b>
@@ -21,34 +21,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<img src="/nekopi2.jpg" alt="Neko and Copi again" class="back">
 			</div>
 		</main>
+		<style >
+			.card {
+				transform-style: preserve-3d;
+				position: relative;
+			}
+			.front, .back {
+				@apply rounded-full mt-4;
+				transition: all 0.25s linear;
+				backface-visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.front {
+				transform: rotateY(0deg);
+				z-index: 2;
+			}
+			.card:hover .front {
+				transform: rotateY(180deg);
+			}
+			.back {
+				transform: rotateY(180deg);
+				z-index: 1;
+			}
+			.card:hover .back {
+				transform: rotateY(0deg);
+			}
+		</style>
 	</body>
 
-	<style>
-		.card {
-			transform-style: preserve-3d;
-			position: relative;
-		}
-		.front, .back {
-			@apply rounded-full mt-4;
-			transition: all 0.25s linear;
-			backface-visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		.front {
-			transform: rotateY(0deg);
-			z-index: 2;
-		}
-		.card:hover .front {
-			transform: rotateY(180deg);
-		}
-		.back {
-			transform: rotateY(180deg);
-			z-index: 1;
-		}
-		.card:hover .back {
-			transform: rotateY(0deg);
-		}
-	</style>
 </html>

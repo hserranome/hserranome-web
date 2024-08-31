@@ -9,7 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body hx-boost="true" hx-indicator="body">
+	<body>
 		<Header />
 		<main>
 			<div>
@@ -59,13 +59,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<span>And more but I don't think they are too relevant.</span>
 			</div>
 		</main>
+		<style>
+			span {
+				@apply text-gray-400
+			}
+			ul {
+				@apply mb-2;
+			}
+		</style>
 	</body>
-	<style>
-		span {
-			@apply text-gray-400
-		}
-		ul {
-			@apply mb-2;
-		}
-	</style>
+
 </html>

@@ -26,12 +26,6 @@ importers:
       astro:
         specifier: ^4.15.1
         version: 4.15.1(@types/node@22.5.1)(rollup@4.21.2)(typescript@5.5.4)
-      astro-htmx:
-        specifier: ^1.0.6
-        version: 1.0.6(astro@4.15.1(@types/node@22.5.1)(rollup@4.21.2)(typescript@5.5.4))(htmx.org@1.9.12)
-      htmx.org:
-        specifier: ^1.9.12
-        version: 1.9.12
       tailwindcss:
         specifier: ^3.4.10
         version: 3.4.10
@@ -747,12 +741,6 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro-htmx@1.0.6:
-    resolution: {integrity: sha512-CSpII8wU5hsz1Q6abkKRGImOoQB+tVflZlh4wEc/lsZk4y3Mq9Z4sS9ehRvceg4UkY+6Pt64g8EOOdCCtQOBww==}
-    peerDependencies:
-      astro: '>= 3.0.0'
-      htmx.org: '>= 1.9.0'
-
   astro@4.15.1:
     resolution: {integrity: sha512-XvKZ2GaDbCsMfcJess4o+4D4cCKja45GJ/9o6EJ6n96xaen8HZMRoJn3YKL9TOjIrL2NuU4mBFMG2JivPJ0foA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
@@ -1169,9 +1157,6 @@ packages:
 
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
-
-  htmx.org@1.9.12:
-    resolution: {integrity: sha512-VZAohXyF7xPGS52IM8d1T1283y+X4D+Owf3qY1NZ9RuBypyu9l8cGsxUMAG5fEAb/DhT7rDoJ9Hpu5/HxFD3cw==}
 
   http-cache-semantics@4.1.1:
     resolution: {integrity: sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==}
@@ -3025,11 +3010,6 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-htmx@1.0.6(astro@4.15.1(@types/node@22.5.1)(rollup@4.21.2)(typescript@5.5.4))(htmx.org@1.9.12):
-    dependencies:
-      astro: 4.15.1(@types/node@22.5.1)(rollup@4.21.2)(typescript@5.5.4)
-      htmx.org: 1.9.12
-
   astro@4.15.1(@types/node@22.5.1)(rollup@4.21.2)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
@@ -3602,8 +3582,6 @@ snapshots:
   html-escaper@3.0.3: {}
 
   html-void-elements@3.0.0: {}
-
-  htmx.org@1.9.12: {}
 
   http-cache-semantics@4.1.1: {}
 
