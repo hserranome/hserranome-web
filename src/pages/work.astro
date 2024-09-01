@@ -1,7 +1,7 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -13,59 +13,103 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 			<div>
-				<p>Hi. I'm <b>Hendy Serrano</b>, a <b>full-stack developer</b>, currently based in <b>Spain</b>. Currently working at <a target="_blank" rel="noopener noreferrer" href="https://www.cyferd.com/">Cyferd</a>. Only open to full-remote positions.</p>
+				<p>
+					Hi. I'm <b>Hendy Serrano</b>, a <b>full-stack developer</b>, currently based in <b>Spain</b>. Currently
+					working at <a target="_blank" rel="noopener noreferrer" href="https://www.cyferd.com/">Cyferd</a>. Only open
+					to full-remote positions.
+				</p>
 				<!-- TODO: Copy email to clipboard instead -->
-			<p>Get in touch at <b><a href="mailto:hendy@hserrano.me">hendy@hserrano.me</a></b> or <b><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hendy-serrano/">LinkedIn</a></b>.</p>
-			<p>Check out my <b><a href="https://github.com/hserranome">Github</a></b> or <b><a target="_blank" href="/Hendy Serrano - Resume 2024.pdf">my resume</a></b>.</p>
+				<p>
+					Get in touch at <b><a href="mailto:hendy@hserrano.me">hendy@hserrano.me</a></b> or <b
+						><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hendy-serrano/">LinkedIn</a
+						></b>.
+				</p>
+				<p>
+					Check out my <b><a href="https://github.com/hserranome">Github</a></b> or <b
+						><a target="_blank" href="/Hendy Serrano - Resume 2024.pdf">my resume</a></b
+					>.
+				</p>
 			</div>
-			<hr/>
+			<hr />
 			<div>
-			<p>Started working professionally on 2019. I've been mostly working with TypeScript/React, and some Node.js/Express.</p>
-			<p>Before that I messed around learning web dev sporadically and setting up pirated Minecraft servers when I was around 11 because I didn't have the money for it.</p>
-			<hr/>
-			<p>Summary of what I've done in my career:</p>
-			<ul>
-				<li><b>React</b></li>
-				<li><b>React Native</b> (both bare and Expo)</li>
-				<li><b>Node.js</b>, Express</li>
-				<li><b>Typescript</b></li>
-				<li>Postgre<b>SQL</b> <span >(and MySQL)</span></li>
-				<li><b>PHP</b>/Laravel <span >(and Wordpress, but don't ask)</span></li>
-				<li><b>Next.js</b></li>
-				<li><b>Architecture</b> planning</li>
-				<li>Smallish sized <b>dev team management</b></li>
-				<li>Participating in the <b>design process</b> (and I do a bit of UI/UX design)</li>
-				<li>Understanding and handling client demands. I believe empathy goes a long way here, and I kind of enjoy it, but I get burned out quickly</li>
-				<li>Some DevOps(?): setting up servers, CI/CD, monitoring, Docker, etc.</li>
-				<hr/>
-				<li>Little bit of Python <span>(hate the lack of brackets, but it's a really u seful language)</span></li>
-				<li>Little bit of MongoDB <span>(in a bad use case, but I was asked to)</span></li>
-				
-			</ul>
-			<p>Worn many hats very early on my career. Things that come from working with startups.</p>
-			<p>Currently interested into <a target="_blank" rel="noopener noreferrer" href="https://htmx.org/">HTMX</a>, <a target="_blank" rel="noopener noreferrer" href="https://astro.build/">Astro</a>, <a target="_blank" rel="noopener noreferrer" href="https://adonisjs.com/">Adonis.js</a>, <a target="_blank" rel="noopener noreferrer" href="https://remix.run/">Remix</a>, and <a target="_blank" rel="noopener noreferrer" href="https://pocketbase.io/">Pocketbase</a>. Trying to keep it simpler.</p>
+				<p>
+					Started working professionally on 2019. I've been mostly working with TypeScript/React, and some
+					Node.js/Express.
+				</p>
+				<p>
+					Before that I messed around learning web dev sporadically and setting up pirated Minecraft servers when I was
+					around 11 because I didn't have the money for it.
+				</p>
+				<hr />
+				<p>Summary of what I've done in my career:</p>
+				<ul>
+					<li><b>React</b></li>
+					<li><b>React Native</b> (both bare and Expo)</li>
+					<li><b>Node.js</b>, Express</li>
+					<li><b>Typescript</b></li>
+					<li>Postgre<b>SQL</b> <span>(and MySQL)</span></li>
+					<li><b>PHP</b>/Laravel <span>(and Wordpress, but don't ask)</span></li>
+					<li><b>Next.js</b></li>
+					<li><b>Architecture</b> planning</li>
+					<li>Smallish sized <b>dev team management</b></li>
+					<li>Participating in the <b>design process</b> (and I do a bit of UI/UX design)</li>
+					<li>
+						Understanding and handling client demands. I believe empathy goes a long way here, and I kind of enjoy it,
+						but I get burned out quickly
+					</li>
+					<li>Some DevOps(?): setting up servers, CI/CD, monitoring, Docker, etc.</li>
+					<hr />
+					<li>Little bit of Python <span>(hate the lack of brackets, but it's a really u seful language)</span></li>
+					<li>Little bit of MongoDB <span>(in a bad use case, but I was asked to)</span></li>
+				</ul>
+				<p>Worn many hats very early on my career. Things that come from working with startups.</p>
+				<p>
+					Currently interested into <a target="_blank" rel="noopener noreferrer" href="https://htmx.org/">HTMX</a>, <a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://astro.build/">Astro</a
+					>, <a target="_blank" rel="noopener noreferrer" href="https://adonisjs.com/">Adonis.js</a>, <a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://remix.run/">Remix</a
+					>, and <a target="_blank" rel="noopener noreferrer" href="https://pocketbase.io/">Pocketbase</a>. Trying to
+					keep it simpler.
+				</p>
 			</div>
-			<hr/>
+			<hr />
 			<div>
 				<h2>Stuff I've worked on:</h2>
 				<ul>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://cyferd.com">Cyferd</a></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://www.hobeen.com/">Hobeen</a></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://recomiend.app/">Recomiend.app</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/trabajosremotos/posts/?feedView=all">Trabajosremotos</a> <span>defunct</span></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.seetyz.android&hl=en">Seetyz</a> <span>not sure if active anymore</span></li>
+					<li>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/company/trabajosremotos/posts/?feedView=all">Trabajosremotos</a
+						>
+						<span>defunct</span>
+					</li>
+					<li>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://play.google.com/store/apps/details?id=com.seetyz.android&hl=en">Seetyz</a
+						>
+						<span>not sure if active anymore</span>
+					</li>
 				</ul>
 				<span>And more but I don't think they are too relevant.</span>
 			</div>
 		</main>
 		<style>
 			span {
-				@apply text-gray-400
+				@apply text-gray-400;
 			}
 			ul {
 				@apply mb-2;
 			}
 		</style>
 	</body>
-
 </html>

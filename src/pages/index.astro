@@ -1,7 +1,7 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -14,19 +14,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<b><p class="text-2xl mb-2">Hi. Hendy Serrano here.</p></b>
 			<p class="text-xl">For work stuff check my <a href="/work">work</a> page.</p>
-			<hr/>
+			<hr />
 			<p>Here's a pic of my cats:</p>
 			<div class="card max-h-96 max-w-96">
-				<img src="/nekopi1.jpg" alt="Neko and Copi" class="front"/>
-				<img src="/nekopi2.jpg" alt="Neko and Copi again" class="back">
+				<img src="/nekopi1.jpg" alt="Neko and Copi" class="front" />
+				<img src="/nekopi2.jpg" alt="Neko and Copi again" class="back" />
 			</div>
 		</main>
-		<style >
+		<style>
 			.card {
 				transform-style: preserve-3d;
 				position: relative;
 			}
-			.front, .back {
+			.front,
+			.back {
 				@apply rounded-full mt-4;
 				transition: all 0.25s linear;
 				backface-visibility: hidden;
@@ -50,5 +51,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			}
 		</style>
 	</body>
-
 </html>
