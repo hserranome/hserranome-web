@@ -1,4 +1,21 @@
 @tailwind base;
+
+@font-face {
+	font-family: 'Courier Prime';
+	src: url('/fonts/CourierPrime-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Courier Prime';
+	src: url('/fonts/CourierPrime-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
 main {
 	@apply mx-auto;
 	@apply max-w-4xl;
@@ -9,10 +26,16 @@ main {
 p {
 	@apply text-base;
 	@apply mb-1;
+	/* @apply leading-relaxed; */
 }
-a {
+a, a:link {
 	@apply underline;
-	@apply text-blue-500;
+	@apply text-orange-400;
+	@apply transition-colors;
+}
+
+a:hover {
+	@apply text-orange-600;
 }
 hr {
 	@apply my-4;
