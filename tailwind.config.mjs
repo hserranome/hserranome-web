@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 		  fontFamily: {
-			sans: ['Courier Prime', ...defaultTheme.fontFamily.sans],
+			sans: ['Inter', ...defaultTheme.fontFamily.sans],
 		  },
 		},
 	  },

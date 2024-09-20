@@ -1,19 +1,22 @@
 @tailwind base;
 
 @font-face {
-	font-family: 'Courier Prime';
-	src: url('/fonts/CourierPrime-Regular.ttf') format('truetype');
-	font-weight: normal;
+	font-family: "Inter";
+	src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Courier Prime';
-	src: url('/fonts/CourierPrime-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+	font-family: "Inter";
+	src: url("/fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+	font-style: italic;
 	font-display: swap;
+}
+
+body {
+	@apply bg-black;
+	@apply text-white;
 }
 
 main {
@@ -26,9 +29,10 @@ main {
 p {
 	@apply text-base;
 	@apply mb-1;
-	/* @apply leading-relaxed; */
+	@apply leading-relaxed;
 }
-a, a:link {
+a,
+a:link {
 	@apply underline;
 	@apply text-orange-400;
 	@apply transition-colors;
