@@ -1,7 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 
-import "../styles/reset.css";
 import "../styles/base.css";
 
 interface Props {
@@ -22,7 +21,13 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin />
+<link
+	rel="preload"
+	href="/fonts/Inter-VariableFont_opsz,wght.ttf"
+	as="font"
+	type="font/ttf"
+	crossorigin
+/>
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
