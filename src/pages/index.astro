@@ -1,7 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import nekoCopiLaying from "../assets/images/nekocopilaying.png";
 ---
 
 <!doctype html>
@@ -14,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <main>
       <h1 class="text-5xl mb-4"><b>Hi. I'm Hendy Serrano. 🐀🐈‍⬛</b></h1>
       <p>For work related stuff check <a href="/work">here</a>.</p>
-      <img src="./images/nekocopilaying.png" class="cats" />
+      <Image src={nekoCopiLaying} class="cats" alt="Pic of my cats" />
     </main>
     <style>
       .card {
