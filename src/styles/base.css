@@ -14,7 +14,7 @@
 	font-display: swap;
 }
 
-body {
+html {
 	@apply bg-black;
 	@apply text-white;
 }
@@ -26,11 +26,13 @@ main {
 	@apply mt-16;
 	@apply mb-16;
 }
+
 p {
 	@apply text-base;
 	@apply mb-1;
 	@apply leading-relaxed;
 }
+
 a,
 a:link {
 	@apply underline;
@@ -41,13 +43,16 @@ a:link {
 a:hover {
 	@apply text-orange-600;
 }
+
 hr {
 	@apply my-4;
 }
+
 ul {
 	@apply list-disc;
 	@apply pl-6;
 }
+
 li {
 	@apply mb-1;
 }
