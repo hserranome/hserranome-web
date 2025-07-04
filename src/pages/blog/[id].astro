@@ -1,6 +1,5 @@
 ---
 import { getCollection, render } from "astro:content";
-import Header from "../../components/Header.astro";
 import BaseHead from "../../components/BaseHead.astro";
 import { SITE_TITLE } from "../../consts";
 
@@ -26,9 +25,11 @@ const { Content } = await render(post);
         />
     </head>
     <body>
-        <Header />
-        <main>
-            <Content />
+        <main class="pt-16">
+            <a href="/">{`<- Back to home`}</a>
+            <div class="mt-6">
+                <Content />
+            </div>
         </main>
     </body>
 </html>

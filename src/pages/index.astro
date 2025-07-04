@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import nekoCopiLaying from "../assets/images/nekocopilaying.png";
 import { getCollection } from "astro:content";
@@ -15,10 +14,24 @@ const posts = await getCollection("blog");
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <Header />
-    <main>
+    <main class="pt-16">
       <h1 class="text-5xl mb-4"><b>Hi. I'm Hendy Serrano. 🐀🐈‍⬛</b></h1>
-      <p>For work related stuff check <a href="/work">here</a>.</p>
+      <div>
+        <p class="font-semibold">
+          <span class="font-normal">Check out my: </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/hendy-serrano/">LinkedIn</a
+          >
+          <span class="font-normal"> | </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/hserranome">Github</a
+          >
+        </p>
+      </div>
       <Image src={nekoCopiLaying} class="cats" alt="Pic of my cats" />
       <div class="mt-12">
         <h2 class="font-semibold">Entries</h2>
@@ -35,41 +48,42 @@ const posts = await getCollection("blog");
           }
         </ul>
       </div>
-    </main>
-    <style>
-      .card {
-        transform-style: preserve-3d;
-        position: relative;
-      }
-      .front,
-      .back {
-        @apply rounded-full mt-4;
-        transition: all 0.25s linear;
-        backface-visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .front {
-        transform: rotateY(0deg);
-        z-index: 2;
-      }
-      .card:hover .front {
-        transform: rotateY(180deg);
-      }
-      .back {
-        transform: rotateY(180deg);
-        z-index: 1;
-      }
-      .card:hover .back {
-        transform: rotateY(0deg);
-      }
 
-      .cats {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    </style>
+      <style>
+        .card {
+          transform-style: preserve-3d;
+          position: relative;
+        }
+        .front,
+        .back {
+          @apply rounded-full mt-4;
+          transition: all 0.25s linear;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .front {
+          transform: rotateY(0deg);
+          z-index: 2;
+        }
+        .card:hover .front {
+          transform: rotateY(180deg);
+        }
+        .back {
+          transform: rotateY(180deg);
+          z-index: 1;
+        }
+        .card:hover .back {
+          transform: rotateY(0deg);
+        }
+
+        .cats {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      </style>
+    </main>
   </body>
 </html>
