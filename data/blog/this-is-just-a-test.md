@@ -1,7 +1,6 @@
 ---
 title: "Just trying Astro collections"
 publishDate: 2025-07-02
-description: "A quick exploration of Astro's content collections and how they make blog management easy."
 ---
 
 # Just trying Astro collections

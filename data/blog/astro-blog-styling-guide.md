@@ -2,7 +2,6 @@
 title: "Astro Blog Styling Guide: Creating Beautiful Content"
 publishDate: 2025-01-15
 updatedDate: 2025-01-16
-description: "Learn how to create beautifully styled blog content in Astro using Tailwind Typography and custom CSS enhancements."
 ---
 
 # Astro Blog Styling Guide: Creating Beautiful Content
