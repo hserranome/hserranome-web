@@ -27,6 +27,81 @@ main {
 	@apply mb-16;
 }
 
+/* Blog Content Styling */
+.blog-content {
+	@apply prose prose-invert prose-lg max-w-none;
+	@apply prose-headings:text-white prose-headings:font-semibold;
+	@apply prose-h1:text-3xl prose-h1:mb-6 prose-h1:mt-8 prose-h1:border-b prose-h1:border-gray-700 prose-h1:pb-2;
+	@apply prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-6 prose-h2:text-gray-100;
+	@apply prose-h3:text-xl prose-h3:mb-3 prose-h3:mt-5 prose-h3:text-gray-200;
+	@apply prose-h4:text-lg prose-h4:mb-2 prose-h4:mt-4 prose-h4:text-gray-300;
+	@apply prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-4;
+	@apply prose-strong:text-white prose-strong:font-semibold;
+	@apply prose-em:text-gray-200 prose-em:italic;
+	@apply prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:pl-4 prose-blockquote:py-2 prose-blockquote:my-6 prose-blockquote:bg-gray-900 prose-blockquote:rounded-r;
+	@apply prose-code:text-orange-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm;
+	@apply prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto;
+	@apply prose-pre:code:bg-transparent prose-pre:code:p-0 prose-pre:code:text-gray-300;
+	@apply prose-ul:list-disc prose-ul:pl-6 prose-ul:my-4;
+	@apply prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-4;
+	@apply prose-li:text-gray-300 prose-li:mb-1;
+	@apply prose-hr:border-gray-700 prose-hr:my-8;
+	@apply prose-table:border-collapse prose-table:w-full prose-table:my-6;
+	@apply prose-th:border prose-th:border-gray-600 prose-th:bg-gray-800 prose-th:p-3 prose-th:text-left prose-th:text-white;
+	@apply prose-td:border prose-td:border-gray-600 prose-td:p-3 prose-td:text-gray-300;
+	@apply prose-img:rounded-lg prose-img:shadow-lg prose-img:my-6;
+}
+
+/* Enhanced link styling for blog content */
+.blog-content a {
+	@apply text-orange-400 hover:text-orange-300 transition-colors duration-200;
+	@apply underline decoration-orange-400/50 hover:decoration-orange-300;
+}
+
+/* Code block styling */
+.blog-content pre {
+	@apply relative;
+}
+
+.blog-content pre::before {
+	content: '';
+	@apply absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-purple-500 rounded-t-lg;
+}
+
+/* Inline code styling */
+.blog-content :not(pre) > code {
+	@apply font-mono text-sm;
+}
+
+/* List styling improvements */
+.blog-content ul ul,
+.blog-content ol ol,
+.blog-content ul ol,
+.blog-content ol ul {
+	@apply mt-2 mb-2;
+}
+
+/* Blockquote improvements */
+.blog-content blockquote p {
+	@apply mb-0;
+}
+
+/* Table improvements */
+.blog-content table {
+	@apply text-sm;
+}
+
+/* Image improvements */
+.blog-content img {
+	@apply mx-auto;
+}
+
+/* Horizontal rule improvements */
+.blog-content hr {
+	@apply border-gray-700;
+}
+
+/* Basic paragraph styling (fallback) */
 p {
 	@apply text-base;
 	@apply mb-1;
