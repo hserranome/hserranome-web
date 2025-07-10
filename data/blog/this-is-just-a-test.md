@@ -3,8 +3,6 @@ title: "Just trying Astro collections"
 publishDate: 2025-07-02
 ---
 
-# Just trying Astro collections
-
 This is actually pretty cool and easy to use. Also, I was using the 4.0 version of Astro and updating it was so so easy.
 
 I remember the Gatsby days. Man, that was really a horrible introduction to GraphQL.

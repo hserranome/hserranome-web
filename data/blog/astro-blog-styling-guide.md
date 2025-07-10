@@ -1,10 +1,9 @@
 ---
 title: "Astro Blog Styling Guide: Creating Beautiful Content"
+
 publishDate: 2025-01-15
 updatedDate: 2025-01-16
 ---
-
-# Astro Blog Styling Guide: Creating Beautiful Content
 
 Welcome to our comprehensive guide on styling blog content in Astro! This post demonstrates various markdown elements and how they're styled with our enhanced typography system.
 
@@ -32,7 +31,7 @@ function createBlogPost(title, content) {
     title: title,
     content: content,
     publishDate: new Date(),
-    slug: title.toLowerCase().replace(/\s+/g, '-')
+    slug: title.toLowerCase().replace(/\s+/g, "-"),
   };
 }
 
@@ -45,7 +44,7 @@ console.log(post);
 ### Unordered Lists
 
 - First item with some **bold text**
-- Second item with *italic text*
+- Second item with _italic text_
 - Third item with `inline code`
 - Nested list:
   - Sub-item 1
@@ -63,16 +62,16 @@ console.log(post);
 
 > This is a blockquote that demonstrates how quoted content is styled. It includes a nice left border and subtle background to make it stand out from regular content.
 
-*Italic text* and **bold text** help emphasize important points in your content.
+_Italic text_ and **bold text** help emphasize important points in your content.
 
 ## Tables
 
-| Feature | Description | Status |
-|---------|-------------|--------|
-| Typography | Beautiful text styling | ✅ Complete |
-| Code blocks | Syntax highlighting | ✅ Complete |
-| Responsive | Mobile-friendly design | ✅ Complete |
-| Dark theme | Easy on the eyes | ✅ Complete |
+| Feature     | Description            | Status      |
+| ----------- | ---------------------- | ----------- |
+| Typography  | Beautiful text styling | ✅ Complete |
+| Code blocks | Syntax highlighting    | ✅ Complete |
+| Responsive  | Mobile-friendly design | ✅ Complete |
+| Dark theme  | Easy on the eyes       | ✅ Complete |
 
 ## Links and References
 
@@ -92,4 +91,4 @@ With this styling system, your blog content will look professional and be easy t
 
 ---
 
-*This post demonstrates the comprehensive styling system we've implemented for the blog. Each element is carefully styled to provide the best reading experience possible.*
+_This post demonstrates the comprehensive styling system we've implemented for the blog. Each element is carefully styled to provide the best reading experience possible._
